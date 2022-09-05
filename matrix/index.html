@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Game of Thrones: Co-occurrence</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Game of Thrones: Co-occurrence">
+    <meta name="author" content="Jeffrey Lancaster">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css" />
+    <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <p> 
+      <select id="order">
+        <option value="name">Order by Name</option>
+        <option value="count">Order by Frequency</option>
+        <option value="group">Order by Cluster</option>
+      </select>
+      <!-- <button type="button" id="show">Show all</button> -->
+    </p>
+    <svg class="matrix"></svg>
+
+    <script>
+/* HELPFUL FUNCTIONS */
+
+// to convert scene start/end times into seconds
+function sec(timeString){
+  var sec = 0;
+  if (timeString.length == 0) return sec;
+  var splitArray = timeString.split(":");
+  sec = 3600*parseFloat(splitArray[0])+60*parseFloat(splitArray[1])+parseFloat(splitArray[2]);
+  return sec;
+}
+
+// to convert seconds into hh:mm:ss
+function secondsToHMS(d) {
+  var date = new Date(null);
+  date.setSeconds(d); // specify value for SECONDS here
+  return date.toISOString().substr(11, 8);
+}
+
+// to dedpulicate an array
+function onlyUnique(value, index, self) { 
+  return self.indexOf(value) === index;
+}
+
+var config = {
+  "title":"Co-Occurrence",
+  "scopeMain": true,
+  "all": 5000,
+  "main": 1600,
+  "margin": {
+    "top": 120,
+    "right": 60,
+    "bottom": 60,
+    "left": 120
+  }
+}
+
+var matrix = {"nodes":[], "links":[]};
+
+/* IMPORT DATA */
+d3.queue()
+  .defer(d3.json, '../data/episodes.json')
+  .defer(d3.json, '../data/characters-groups.json')
+  .await(ready);
+
+function ready(error, e, g) {
+  if (error) throw error;
+  console.log("now that the files are loaded... do magic.");
+
+  var groups = {};
+  g.groups.forEach(function(val, ind){
+    val.characters.forEach(function(v, i){
+      groups[v] = ind + 1;
+    })
+  })
+
+  // put all scenes in one array
+  var scenes = e.episodes.reduce(function(acc, val, ind){
+    var scene = val.scenes.reduce(function(a, v, i){
+      var sceneLength = Math.abs(sec(v.sceneEnd) - sec(v.sceneStart));
+      var s = Object.assign({}, v, {
+        "seasonNum":val.seasonNum,
+        "episodeNum":val.episodeNum,
+        "sceneLength": sceneLength});
+      return a.concat(s);
+    }, []);
+    return [...acc, ...scene];
+  }, []);
+
+  // put all characters in one array, make object to count character time
+  var characters = [];
+  if(!config.scopeMain){
+    characters = scenes.reduce(function(acc, val, ind){
+      var c = val.characters.reduce(function(a, v, i){
+        return a.concat(v.name);
+      }, []);
+      return [...acc, ...c];
+    }, [])
+      .filter(onlyUnique)
+      .map(function(cur, ind){
+        return Object.assign({}, {"name": cur});
+      });
+    } else {
+      g.groups.forEach(function(val, ind){
+        val.characters.forEach(function(v, i){
+          characters.push({"name": v});
+        })
+      })
+    }
+
+  // Compute index per node.
+  var matrixArr = [];
+  characters.forEach(function(val, ind) {
+    group = (groups[val.name]) ? groups[val.name] : g.groups.length + 1;
+    matrix.nodes.push({
+      "name": val.name,
+      "group": group,
+      "id": ind,
+      "index": ind,
+      "count": 0
+    });
+    matrixArr[ind] = d3.range(characters.length).map(function(j) { return {x: j, y: ind, z: 0}; });
+  });
+
+  // go through scenes and add sceneLength values to characters' counts
+  scenes.forEach(function(val, ind){
+    val.characters.forEach(function(v, i){
+      var a = characters.findIndex(function(value){
+        return value.name == v.name;
+      });
+      if(a > -1){
+        matrix.nodes[a].count += val.sceneLength;
+      }
+      val.characters.forEach(function(w, j){
+        var b = characters.findIndex(function(value){
+          return value.name == w.name;
+        });
+        if(a > -1 && b > -1){
+          matrixArr[a][b].z += val.sceneLength;
+        }
+      })
+    })
+  })
+
+  // build the visualization
+  
+  var width = height = (!config.scopeMain) ? config.all : config.main;
+
+  var x = d3.scaleBand().range([0, width]),
+    z = d3.scaleLinear().domain([0, 100]).clamp(true),
+    //c = d3.scale.category20c().domain(d3.range(20));
+    c = d3.scaleOrdinal().range([
+        "#666666",// Stark
+        "#9B0056",// Targaryen
+        "#B36305",// Baratheon
+        "#FFD300",// Lannister
+        "#000000",// Night's Watch
+        "#00782A",// Dothraki
+        "#003688",// Greyjoy
+        "#E32017",// Tyrell
+        "#95CDBA",// Wildling
+        "#EE7C0E",// Martell
+        "#00A4A7",// Frey
+        "#0098D4",// Tully
+        "#87CEFA",// White Walkers
+        "#F3A9BB" // Include
+        ]);
+
+  var svg = d3.select("svg")
+      .attr("width", width + config.margin.left + config.margin.right)
+      .attr("height", height + config.margin.top + config.margin.bottom)
+      .style("margin-left", -config.margin.left + "px")
+    .append("g")
+      .attr("transform", "translate(" + config.margin.left + "," + config.margin.top + ")");
+
+    var nodes = matrix.nodes,
+      n = nodes.length;
+
+    // Precompute the orders.
+    var orders = {
+      name: d3.range(n).sort(function(a, b) { return d3.ascending(nodes[a].name, nodes[b].name); }),
+      count: d3.range(n).sort(function(a, b) { return nodes[b].count - nodes[a].count; }),
+      group: d3.range(n).sort(function(a, b) { return nodes[a].group - nodes[b].group; })
+    };
+
+    // The default sort order.
+    x.domain(orders.name);
+
+    svg.append("rect")
+        .attr("class", "background")
+        .attr("width", width)
+        .attr("height", height);
+
+    var row = svg.selectAll(".row")
+        .data(matrixArr)
+      .enter().append("g")
+        .attr("class", "row")
+        .attr("transform", function(d, i) { return "translate(0," + x(i) + ")"; })
+        .each(row);
+
+    row.append("line")
+        .attr("x2", width);
+
+    row.append("text")
+        .attr("x", -6)
+        .attr("y", x.bandwidth() / 2)
+        .attr("dy", ".32em")
+        .attr("text-anchor", "end")
+        .text(function(d, i) { return nodes[i].name; });
+
+    var column = svg.selectAll(".column")
+      .data(matrixArr)
+      .enter().append("g")
+        .attr("class", "column")
+        .attr("transform", function(d, i) { return "translate(" + x(i) + ")rotate(-90)"; });
+
+    column.append("line")
+        .attr("x1", -width);
+
+    column.append("text")
+        .attr("x", 6)
+        .attr("y", x.bandwidth() / 2)
+        .attr("dy", ".32em")
+        .attr("text-anchor", "start")
+        .text(function(d, i) { return nodes[i].name; });
+
+    function row(row) {
+      var cell = d3.select(this).selectAll(".cell")
+          .data(row.filter(function(d) { return d.z; }))
+        .enter().append("rect")
+          .attr("class", "cell")
+          .attr("x", function(d) { return x(d.x); })
+          .attr("width", x.bandwidth())
+          .attr("height", x.bandwidth())
+          .style("fill-opacity", function(d) { return z(d.z); })
+          .style("fill", function(d) { return nodes[d.x].group == nodes[d.y].group ? c(nodes[d.x].group) : null; })
+          .on("mouseover", mouseover)
+          .on("mouseout", mouseout)
+          .append("svg:title")
+          .text(function(d,i) {
+            var suffix = (d.z > 1) ? "s" : "";
+            if(d.x == d.y){
+              return `${matrix.nodes[d.x].name} is onscreen for ${secondsToHMS(d.z)}`;
+            } else {
+              return `${matrix.nodes[d.x].name} and ${matrix.nodes[d.y].name} are onscreen together for ${secondsToHMS(d.z)}`;
+            }
+          });
+    }
+
+    function mouseover(p) {
+      d3.selectAll(".row text").classed("active", function(d, i) { return i == p.y; });
+      d3.selectAll(".column text").classed("active", function(d, i) { return i == p.x; });
+    }
+
+    function mouseout() {
+      d3.selectAll("text").classed("active", false);
+    }
+
+    d3.select("#order").on("change", function() {
+      clearTimeout(timeout);
+      order(this.value);
+    });
+
+    function order(value) {
+      x.domain(orders[value]);
+
+      var t = svg.transition().duration(2500);
+
+      t.selectAll(".row")
+        .delay(function(d, i) { return x(i) * 4; })
+        .attr("transform", function(d, i) { return "translate(0," + x(i) + ")"; })
+      .selectAll(".cell")
+        .delay(function(d) { return x(d.x) * 4; })
+        .attr("x", function(d) { return x(d.x); });
+
+      t.selectAll(".column")
+        .delay(function(d, i) { return x(i) * 4; })
+        .attr("transform", function(d, i) { return "translate(" + x(i) + ")rotate(-90)"; });
+    }
+
+    var timeout = setTimeout(function() {
+      order("group");
+      d3.select("#order").property("selectedIndex", 2).node().focus();
+      }, 5000);
+
+};
+
+    </script>
+  </body>
+</html>

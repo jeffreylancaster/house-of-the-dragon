@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Game of Thrones: Characters Per Scene</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Game of Thrones: Characters Per Scene">
+    <meta name="author" content="Jeffrey Lancaster">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <p style="margin-left: 20px;">
+      <button class="center">Center</button>
+      <button class="baseline">Baseline</button>
+    </p>
+    
+    <svg></svg>
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <!-- for d3.queue() using d3.v5 -->
+    <script src="https://d3js.org/d3-collection.v1.min.js"></script>
+    <script src="https://d3js.org/d3-dispatch.v1.min.js"></script>
+    <script src="https://d3js.org/d3-dsv.v1.min.js"></script>
+    <script src="https://d3js.org/d3-request.v1.min.js"></script>
+    <script src="https://d3js.org/d3-queue.v3.min.js"></script>
+    <script>
+
+/* HELPFUL FUNCTIONS */
+
+// to convert scene start/end times into seconds
+function sec(timeString){
+  var sec = 0;
+  if (timeString.length == 0) return sec;
+  var splitArray = timeString.split(":");
+  sec = 3600*parseFloat(splitArray[0])+60*parseFloat(splitArray[1])+parseFloat(splitArray[2]);
+  return sec;
+}
+
+// to convert seconds into hh:mm:ss
+function secondsToHMS(d) {
+  var date = new Date(null);
+  date.setSeconds(d); // specify value for SECONDS here
+  return date.toISOString().substr(11, 8);
+}
+
+// to dedpulicate an array
+function onlyUnique(value, index, self) { 
+  return self.indexOf(value) === index;
+}
+
+var config = {
+  "title": "Characters Per Scene",
+  "width":2000,
+  "height":500,
+  "margin":{
+    "top": 20,
+    "right": 60,
+    "bottom": 30,
+    "left": 40
+  },
+  "barHeight": 20
+}
+
+
+/* IMPORT DATA */
+d3.queue()
+  .defer(d3.json, '../data/episodes.json')
+  .await(ready);
+
+function ready(error, e) {
+  if (error) throw error;
+  console.log("now that the files are loaded... do magic.");
+
+  episodesData = e.episodes;
+
+  /* CONFIG SETUP */
+  d3.select("svg")
+    .attr("width", config.width)
+    .attr("height", config.height);
+  /* END CONFIG SETUP */
+
+  var end = 0,
+    totalTime = 0;
+  
+  // put all scenes in one array
+  var scenes = e.episodes.reduce(function(acc, val, ind){
+    var scene = val.scenes.reduce(function(a, v, i){
+      // sort characters
+      v.characters.sort((a,b) => (a.name > b.name) ? 1 : ((b.name > a.name) ? -1 : 0));
+      // give each character an index and count the total i the scene
+      v.characters.forEach(function(value, index){
+        value.index = index;
+        value.total = v.characters.length-1;
+      })
+      // calculate length of scene in seconds
+      var sceneLength = Math.abs(sec(v.sceneEnd) - sec(v.sceneStart));
+      // determine the location
+      var location = (v.subLocation) ? v.location + " - " + v.subLocation : v.location;
+      var s = Object.assign({}, v, {
+        "seasonNum": val.seasonNum,
+        "episodeNum": val.episodeNum,
+        "sceneLength": sceneLength,
+        "location": location,
+        "absStartSec": totalTime,
+        "absEndSec": totalTime + sceneLength
+      });
+      // store the last absEndSec as end
+      end = totalTime + sceneLength;
+      // add scene length to total time
+      totalTime += sceneLength;
+      return a.concat(s);
+    }, []);
+    return [...acc, ...scene];
+  }, []);
+
+  // put all seasons in an array
+  var seasons = scenes.reduce(function(acc, val, ind){
+    return [...acc, val.seasonNum];
+  }, [])
+    .filter(onlyUnique);
+
+  // put all characters in one array
+  var characters = scenes.reduce(function(acc, val, ind){
+    var c = val.characters.reduce(function(a, v, i){
+      return a.concat(v.name);
+    }, []);
+    return [...acc, ...c];
+  }, [])
+    .filter(onlyUnique)
+    .sort();
+
+  // calculate the maximum number of characters in a scene
+  var maxCharacters = Math.max.apply(Math, scenes.map(function(o) { return o.characters.length; }))
+
+
+  // build the visualization
+  var data = scenes;
+  var barHeight = config.barHeight;
+
+  var svg = d3.select("svg"),
+      margin = config.margin,
+      width = +svg.attr("width") - margin.left - margin.right,
+      // height = barHeight*data.length + margin.top + margin.bottom,
+      height = barHeight * maxCharacters,
+      g = svg.append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+  var x = d3.scaleLinear()
+      .rangeRound([0, width]);
+  x.domain([0, end]).nice();
+
+  var s = g.selectAll(".scene")
+    .data(data)
+    .enter().append("g")
+      .attr("class", "scene")
+      .attr("transform", function(d){return "translate("+x(d.absStartSec)+", 0)"})
+      .selectAll("rect")
+        .data(function(d) { return d.characters; })
+        .enter().append("rect")
+          .attr("y", function(d){return height - (barHeight * d.index)}) // bottom baseline
+          .attr("width", function(d){
+            var parent = d3.select(this.parentNode).datum();
+            return x(parent.absEndSec) - x(parent.absStartSec)})
+          .attr("height", barHeight)
+          .attr("fill", function(d){
+            return d3.interpolateSinebow(characters.indexOf(d.name)/characters.length);
+          })
+          .attr("class", function(d){return d.name.toLowerCase().replace(/([^A-Z0-9])/gi,"")})
+          .append("svg:title")
+            .text(function(d) {return d.name});    
+
+  var t = d3.transition()
+    .duration(2000)
+    .ease(d3.easeCubic);
+
+  // transition to center baseline
+  d3.select("button.center")
+    .on("click", function(){
+      d3.select(".center")
+        .classed("disabled", true);
+      d3.select(".baseline")
+        .classed("disabled", false)
+      d3.selectAll("rect")
+        .interrupt()
+        .transition(t)
+        .delay(function(d, i) { return i * 5; })
+        .attr("y", function(d){return height/2 - (barHeight * d.index) + (barHeight * d.total)/2}) // center baseline
+    })
+    
+  d3.select("button.baseline")
+    .on("click", function(){
+      d3.selectAll(".baseline")
+        .classed("disabled", true)
+      d3.selectAll(".center")
+        .classed("disabled", false)
+      d3.selectAll("rect")
+        .interrupt()
+        .transition(t)
+        .attr("y", function(d){return height - (barHeight * d.index)}) // bottom baseline
+    })
+    
+  // add hover behavior
+  d3.selectAll("rect")
+    .on("mouseover", function(){
+      d3.selectAll("rect")
+        .style("opacity", 0.3)
+      d3.selectAll("."+d3.select(this).attr("class"))
+        .style("opacity", 1)
+    })
+    .on("mouseout", function(){
+      d3.selectAll("rect")
+        .style("opacity", 1)
+    })
+  
+};
+
+    </script>
+  </body>
+</html>

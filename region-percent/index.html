@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Game of Thrones: % Time Per Region</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Game of Thrones: % Time Per Region">
+    <meta name="author" content="Jeffrey Lancaster">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <svg id="region-percent"></svg>
+
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script>
+
+/* HELPFUL FUNCTIONS */
+
+// to convert scene start/end times into seconds
+function sec(timeString){
+  var sec = 0;
+  if (timeString.length == 0) return sec;
+  var splitArray = timeString.split(":");
+  sec = 3600*parseFloat(splitArray[0])+60*parseFloat(splitArray[1])+parseFloat(splitArray[2]);
+  return sec;
+}
+
+// to convert seconds into hh:mm:ss
+function secondsToHMS(d) {
+  var date = new Date(null);
+  date.setSeconds(d); // specify value for SECONDS here
+  return date.toISOString().substr(11, 8);
+}
+
+// to dedpulicate an array
+function onlyUnique(value, index, self) { 
+  return self.indexOf(value) === index;
+}
+
+var config = {
+  "title":"% Time Per Region",
+  "width":960,
+  "height":550,
+  "margin":{
+    "top": 20,
+    "right": 150,
+    "bottom": 30,
+    "left": 180
+  },
+  "legendOffset": {
+    "x":50,
+    "y":40
+  },
+  "barHeight": 20
+}
+
+
+/* IMPORT DATA */
+d3.queue()
+  .defer(d3.json, '../data/locations.json')
+  .defer(d3.json, '../data/episodes.json')
+  .await(ready);
+
+function ready(error, l, e) {
+  if (error) throw error;
+  console.log("now that the files are loaded... do magic.");
+
+  locationsData = l.regions;
+  episodesData = e.episodes;
+
+  /* CONFIG SETUP */
+  d3.select("svg")
+    .attr("width", config.width)
+    .attr("height", config.height)
+  /* END CONFIG SETUP */
+
+  // put all scenes in one array
+  var scenes = e.episodes.reduce(function(acc, val, ind){
+    var scene = val.scenes.reduce(function(a, v, i){
+      var sceneLength = Math.abs(sec(v.sceneEnd) - sec(v.sceneStart));
+      var s = Object.assign({}, v, {"seasonNum":val.seasonNum, "episodeNum":val.episodeNum, "sceneLength": sceneLength});
+      return a.concat(s);
+    }, []);
+    return [...acc, ...scene];
+  }, []);
+
+  // get the list of all locations
+  var locations = l.regions.map(function(val, ind){
+    return val.location
+  })
+
+  // then put that array into an object with 0 count
+  var locationsObj = locations.reduce(function(acc, val, ind){
+    var obj = {};
+    obj[val] = 0;
+    return Object.assign(acc, obj);
+  }, {});
+
+  // put all characters in one array, make object to count character time
+  var characters = scenes.reduce(function(acc, val, ind){
+    var c = val.characters.reduce(function(a, v, i){
+      return a.concat(v.name);
+    }, []);
+    return [...acc, ...c];
+  }, [])
+    .filter(onlyUnique)
+    .sort()
+    .map(function(cur, ind){
+      return Object.assign({}, {"name": cur}, locationsObj);
+    });
+
+  // go through scenes and add sceneLength values to characters' counts
+  scenes.forEach(function(val, ind){
+    val.characters.forEach(function(v, i){
+      var index = characters.findIndex(function(element){
+        return element.name == v.name;
+      });
+      characters[index][val.location] += val.sceneLength;
+    })
+  })
+
+  // count the number of regions with > 0 sec
+  characters.forEach(function(val, ind){
+    var num = Object.values(val)
+      .filter(function(v){
+        return v > 0
+      })
+    num = num.length;
+    val.num = num;
+  })
+
+  characters = characters.filter(function(val){
+    return val.num > 1;
+  })
+
+  // build the visualization
+
+  var data = characters;
+  var barHeight = config.barHeight;
+
+  var svg = d3.select("svg"),
+      margin = config.margin,
+      width = +svg.attr("width") - margin.left - margin.right,
+      height = barHeight*data.length + margin.top + margin.bottom,
+      g = svg.append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+  svg.attr("height", height);
+
+  var y = d3.scaleBand() 
+      .rangeRound([0, height])
+      .paddingInner(0.15)
+      .align(0.1);
+
+  var x = d3.scaleLinear()
+      .rangeRound([0, width]);
+
+  // var z = d3.scaleOrdinal(d3.schemeCategory20c);
+
+  /* CUSTOM FOR GAME OF THRONES */
+  var z = d3.scaleOrdinal()
+    .range([
+      "#f7fbff", // North of the Wall
+      "#deebf7", // The Wall
+      "#c6dbef", // The North
+      "#9ecae1", // The Shivering Sea
+      "#6baed6", // The Vale
+      "#4292c6", // The Iron Islands
+      "#2171b5", // The Sunset Sea
+      "#084594", // The Westerlands
+      "#00441b", // The Riverlands
+      "#006d2c", // The Narrow Sea
+      "#238b45", // The Crownlands
+      "#41ae76", // The Stormlands
+      "#66c2a4", // The Reach
+      "#99d8c9", // Dorne
+      "#ccece6", // Pentos
+      "#e5f5f9", // Braavos
+      "#f7fcfd", // The Summer Sea
+      "#ffffe5", // Volantis
+      "#fff7bc", // Valyria
+      "#fee391", // The Dothraki Sea
+      "#fec44f", // Meereen
+      "#fe9929", // Yunkai
+      "#ec7014", // Astapor
+      "#cc4c02", // Vaes Dothrak
+      "#993404", // The Red Waste
+      "#662506" // Qarth
+    ]);
+  
+  // /* CUSTOM FOR STRANGER THINGS */
+  // var z = d3.scaleOrdinal().range([
+  //   "#393b79", // Big City
+  //   "#5254a3", // Chicago, Illinois
+  //   "#6b6ecf", // outside Chicago, Illinois
+  //   "#9c9ede", // Pittsburgh, Pennsylvania
+  //   "#CCCCCC", // Sesser, Illinois
+  //   "#cedb9c", // to Sesser, Illinois
+  //   "#b5cf6b", // Indianapolis, Indiana
+  //   "#8ca252", // 515 Larrabee Road, Indiana
+  //   "#637939", // Hawkins, Indiana
+  //   "#141e30" // Upside Down
+  // ]); // based on d3.schemeCategory20b
+
+  var stack = d3.stack()
+    .offset(d3.stackOffsetExpand);
+
+  data.sort(function(a, b) { return b.num - a.num; });
+  
+  var keys = d3.keys(data[0]).slice(1,-1);
+
+  y.domain(data.map(function(d) { return d.name; }));
+  //x.domain([0, d3.max(data, function(d) { return d.total; })]).nice();
+  z.domain(keys);
+
+  g.append("g")
+    .selectAll("g")
+    //.data(d3.stack().keys(keys)(data))
+    .data(stack.keys(keys)(data))
+    .enter().append("g")
+      .attr("fill", function(d) { return z(d.key); })
+    .selectAll("rect")
+    .data(function(d) { return d; })
+    .enter().append("rect")
+      .attr("y", function(d) { return y(d.data.name); })
+      .attr("x", function(d) { return x(d[0]); })
+      .attr("width", function(d) { return x(d[1]) - x(d[0]); })
+      .attr("height", y.bandwidth());
+
+  g.selectAll("g")
+    .data(stack.keys(keys)(data))
+    .append("svg:title")
+      .text(function(d,i) {
+        // not sure why this shift needs to happen...
+        if(i == 0){
+          return keys[keys.length-1]
+        } else {
+          return keys[i-1]
+        };
+      });
+
+  g.append("g")
+    .attr("class", "axis")
+    .attr("transform", "translate(0,0)")
+    .call(d3.axisLeft(y));
+
+  g.append("g")
+    .attr("class", "top-axis")
+    .call(d3.axisTop(x).ticks(10, "%"));
+
+  g.selectAll(".axis")
+    .selectAll(".tick")
+    .data(data)
+    .append("text")
+    .attr("class", "timestamp")
+    .attr("dy", "0.35em")
+    .attr("dx", function(d){ return width + 6; })
+    .attr("text-anchor", "start")
+    .text(function(d){ return `[${d.num}]`; });
+
+  var legend = g.append("g")
+    .attr("font-family", "sans-serif")
+    .attr("font-size", 10)
+    .attr("text-anchor", "end")
+    .attr("transform", function(d, i) { return `translate(${config.legendOffset.x}, ${config.legendOffset.y})` })
+    .selectAll("g")
+    .data(keys.slice())
+    .enter().append("g")
+    .attr("transform", function(d, i) { return `translate(100,${i * 20})`; });
+
+  legend.append("rect")
+    .attr("x", width - 19)
+    .attr("width", 19)
+    .attr("height", 19)
+    .attr("fill", z);
+
+  legend.append("text")
+    .attr("x", width - 24)
+    .attr("y", 9.5)
+    .attr("dy", "0.32em")
+    .text(function(d) {
+      return d;
+      // return d.replace("Pennsylvania","PA").replace("Illinois","IL").replace(", Indiana",", IN"); // CUSTOM FOR STRANGER THINGS: was return d - added .replace() to update labels in keys
+    });
+};
+
+    </script>
+  </body>
+</html>
