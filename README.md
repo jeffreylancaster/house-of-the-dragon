@@ -54,7 +54,7 @@
   - `process.html`: Builds `keyValues.json` from `episodes.json` by adding y-values and additional location-specific information and outputs the data for `keyValues.json`.
   - `index.html`: Builds the visualization using d3.js and outputs the _House of the Dragon_ narrative chart.
 
-![House of the Dragon Narrative Chart](/map/house-of-the-dragon-map.png)
+<!---![House of the Dragon Narrative Chart](/map/house-of-the-dragon-map.png)--->
 
 > Note: map contains spoilers.
 
