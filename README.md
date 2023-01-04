@@ -543,10 +543,6 @@
       "episodeLink": "string", // endpoint: www.imdb.com
       "episodeAirDate": "string", // from imdb
       "episodeDescription": "string", // from imdb
-      "openingSequenceLocations": [
-        "string",
-        ...
-      ],
       "scenes":[
         {
           "sceneStart": "string",
@@ -557,10 +553,12 @@
           "flashback": Boolean,
           "greensight": Boolean,
           "warg": Boolean,
+          "timejump": integer // years
           "characters": [
             {
               "name": "string",
-              "title": "Hand | Khal | Khaleesi | King",
+              "title": "Hand | Khal | Khaleesi | King | Queen", // only for wearer of the crown
+              "age": "infant | toddler | child | adolescent | adult", 
               "alive": Boolean,
               "born": Boolean,
               "weapon": [
