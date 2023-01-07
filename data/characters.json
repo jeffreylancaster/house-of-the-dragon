@@ -689,10 +689,10 @@
 				"Boremund Baratheon"
 			],
 			"parentOf":[
-				"Baratheon Daughter 1",
-				"Baratheon Daughter 2",
-				"Baratheon Daughter 3",
-				"Baratheon Daughter 4"
+				"Baratheon Daughter #1",
+				"Baratheon Daughter #2",
+				"Baratheon Daughter #3",
+				"Baratheon Daughter #4"
 			]
 		},
 		{
@@ -924,7 +924,7 @@
 			"side":"Greens",
 			"royal":true,
 			"parents":[
-				"Viserys II Targaryen",
+				"Viserys I Targaryen",
 				"Alicent Hightower"
 			],
 			"parentOf":[
@@ -977,7 +977,7 @@
 			"side":"Greens",
 			"royal":true,
 			"parents":[
-				"Viserys II Targaryen",
+				"Viserys I Targaryen",
 				"Alicent Hightower"
 			],
 			"siblings":[
@@ -1170,7 +1170,7 @@
 			"side":"Greens",
 			"royal":true,
 			"parents":[
-				"Viserys II Targaryen",
+				"Viserys I Targaryen",
 				"Alicent Hightower"
 			],
 			"parentOf":[
@@ -1225,7 +1225,9 @@
 			"parentOf":[
 				"Jacaerys Velaryon",
 				"Lucerys Velaryon",
-				"Joffrey Velaryon"
+				"Joffrey Velaryon",
+				"Aegon III Targaryen",
+				"Viserys II Targaryen"
 			],
 			"guardedBy":[
 				"Harrold Westerling",
@@ -1686,6 +1688,286 @@
 			"characterLink":"/title/tt11198330/characters/nm8142076",
 			"actorName":"Rosa Escoda",
 			"actorLink":"/name/nm8142076/"
+		},
+
+		{
+			"characterName":"Syrax",
+			"houseName":[
+				"Targaryen"
+			],
+			"side":"Blacks",
+			"riddenBy":[
+				"Rhaenyra Targaryen"
+			]
+		},
+		{
+			"characterName":"Caraxes",
+			"houseName":[
+				"Targaryen"
+			],
+			"side":"Blacks",
+			"riddenBy":[
+				"Daemon Targaryen"
+			]
+		},
+		{
+			"characterName":"Seasmoke",
+			"houseName":[
+				"Velaryon"
+			],
+			"riddenBy":[
+				"Laenor Velaryon"
+			]
+		},
+		{
+			"characterName":"Vhagar",
+			"houseName":[
+				"Targaryen"
+			],
+			"side":"Greens",
+			"riddenBy":[
+				"Laena Velaryon",
+				"Aemond Targaryen"
+			]
+		},
+		{
+			"characterName":"Vermax",
+			"houseName":[
+				"Targaryen"
+			],
+			"side":"Blacks",
+			"riddenBy":[
+				"Jacaerys Velaryon"
+			]
+		},
+		{
+			"characterName":"Sunfyre",
+			"houseName":[
+				"Targaryen"
+			],
+			"side":"Greens",
+			"riddenBy":[
+				"Aegon II Targaryen"
+			]
+		},
+		{
+			"characterName":"Dreamfyre",
+			"houseName":[
+				"Targaryen"
+			],
+			"side":"Greens",
+			"riddenBy":[
+				"Helaena Targaryen"
+			]
+		},
+		{
+			"characterName":"Meleys",
+			"houseName":[
+				"Targaryen",
+				"Velaryon"
+			],
+			"side":"Blacks",
+			"riddenBy":[
+				"Rhaenys Targaryen"
+			]
+		},
+		{
+			"characterName":"Arrax",
+			"houseName":[
+				"Targaryen"
+			],
+			"side":"Blacks",
+			"riddenBy":[
+				"Lucerys Velaryon"
+			]
+		},
+		{
+			"characterName":"Vermithor",
+			"riddenBy":[
+			]
+		},
+		{
+			"characterName":"Baelon Targaryen",
+			"houseName":[
+				"Targaryen"
+			],
+			"parents":[
+				"Viserys I Targaryen",
+				"Aemma Arryn"
+			],
+			"siblings":[
+				"Rhaenyra Targaryen"
+			],
+			"killedBy":[
+				"Life"
+			]
+		},
+		{
+			"characterName":"Desmond Caron"
+		},
+		{
+			"characterName":"Rymun Mallister"
+		},
+		{
+			"characterName":"Gwayne Hightower",
+			"houseName":"Hightower",
+			"parents":[
+				"Otto Hightower"
+			],
+			"siblings":[
+				"Alicent Hightower"
+			]
+		},
+		{
+			"characterName":"Oswin",
+			"houseName":[
+				"Targaryen"
+			],
+			"serves":[
+				"Rhaenyra Targaryen"
+			]
+		},
+		{
+			"characterName":"Joffrey Velaryon",
+			"houseName":[
+				"Velaryon",
+				"Targaryen"
+			],
+			"side":"Blacks",
+			"royal":true,
+			"parents":[
+				"Rhaenyra Targaryen",
+				"Laenor Velaryon",
+				"Harwin Strong"
+			],
+			"siblings":[
+				"Jacaerys Velaryon",
+				"Lucerys Velaryon"
+			],
+			"nickname":"Joff"
+		},
+		{
+			"characterName":"Eddard",
+			"serves":[
+				"Viserys I Targaryen"
+			]
+		},
+		{
+			"characterName":"Aegon III Targaryen",
+			"houseName":[
+				"Targaryen"
+			],
+			"side":"Blacks",
+			"royal":true,
+			"parents":[
+				"Rhaenyra Targaryen",
+				"Daemon Targaryen"
+			],
+			"siblings":[
+				"Viserys II Targaryen",
+				"Visenya Targaryen"
+			]
+		},
+		{
+			"characterName":"Viserys II Targaryen",
+			"houseName":[
+				"Targaryen"
+			],
+			"side":"Blacks",
+			"royal":true,
+			"parents":[
+				"Rhaenyra Targaryen",
+				"Daemon Targaryen"
+			],
+			"siblings":[
+				"Aegon III Targaryen",
+				"Visenya Targaryen"
+			]
+		},
+		{
+			"characterName":"Jaehaerys Targaryen",
+			"houseName":[
+				"Targaryen"
+			],
+			"side":"Greens",
+			"royal":true,
+			"parents":[
+				"Aegon II Targaryen",
+				"Helaena Targaryen"
+			],
+			"siblings":[
+				"Jaehaera Targaryen"
+			]
+		},
+		{
+			"characterName":"Jaehaera Targaryen",
+			"houseName":[
+				"Targaryen"
+			],
+			"side":"Greens",
+			"royal":true,
+			"parents":[
+				"Aegon II Targaryen",
+				"Helaena Targaryen"
+			],
+			"siblings":[
+				"Jaehaerys Targaryen"
+			]
+		},
+		{
+			"characterName":"Visenya Targaryen",
+			"houseName":[
+				"Targaryen"
+			],
+			"side":"Blacks",
+			"royal":true,
+			"parents":[
+				"Rhaenyra Targaryen",
+				"Daemon Targaryen"
+			],
+			"siblings":[
+				"Aegon III Targaryen",
+				"Viserys II Targaryen"
+			],
+			"killedBy":[
+				"Stillborn"
+			]
+		},
+		{
+			"characterName":"Baratheon Daughter #1",
+			"houseName":[
+				"Baratheon"
+			],
+			"parents":[
+				"Borros Baratheon"
+			]
+		},
+		{
+			"characterName":"Baratheon Daughter #2",
+			"houseName":[
+				"Baratheon"
+			],
+			"parents":[
+				"Borros Baratheon"
+			]
+		},
+		{
+			"characterName":"Baratheon Daughter #3",
+			"houseName":[
+				"Baratheon"
+			],
+			"parents":[
+				"Borros Baratheon"
+			]
+		},
+		{
+			"characterName":"Baratheon Daughter #4",
+			"houseName":[
+				"Baratheon"
+			],
+			"parents":[
+				"Borros Baratheon"
+			]
 		}
 	]
 }
