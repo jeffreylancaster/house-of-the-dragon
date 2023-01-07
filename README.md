@@ -547,18 +547,18 @@
         {
           "sceneStart": "string",
           "sceneEnd": "string",
+          "timeline": integer // years in AC
           "location": "string",
           "subLocation": "string",
           "altLocation": "string",
           "flashback": Boolean,
           "greensight": Boolean,
           "warg": Boolean,
-          "timejump": integer // years
           "characters": [
             {
               "name": "string",
               "title": "Hand | Khal | Khaleesi | King | Queen", // only for wearer of the crown
-              "age": "infant | toddler | child | adolescent | adult", 
+              "age": "infant | child | adolescent | adult", 
               "alive": Boolean,
               "born": Boolean,
               "weapon": [
@@ -606,22 +606,29 @@
       "characterImageThumb": "string",
       "characterImageFull": "string",
       "actorName": "string", // OR actors: []
-      "actors": [
-        {
-          "actorName":"Richard Dormer",
-          "actorLink":"/name/nm0233807/",
-          "seasonsActive":[
-            integer,
+      "actorLink": "string", // endpoint: www.imdb.com
+      "actors": [ // for recast characters
+        "age": { // "infant", "child", "adolescent", or "adult" (default)
+          "actorName": "string",
+          "actorLink": "string", // endpoint: www.imdb.com
+          "characterLink": "string", // endpoint: www.imdb.com
+          "characterImageThumb": "string",
+          "characterImageFull": "string",
+          "episodesActive":[
+            {
+              "s": integer,
+              "ep": [ integer, ... ]
+            },
             ...
           ]
         },
         ...
      ],
-      "actorLink": "string", // endpoint: www.imdb.com
       "houseName": [
-        "string", // just string if single value
+        "string"
         ...
       ],
+      "side": "string", // "Greens" or "Blacks"
       "nickname": "string",
       "royal": Boolean,
       "kingsguard": Boolean,
@@ -670,6 +677,14 @@
         ...
       ]
       "servedBy": [
+        "string",
+        ...
+      ],
+      "rides": [
+        "string",
+        ...
+      ]
+      "riddenBy": [
         "string",
         ...
       ]
