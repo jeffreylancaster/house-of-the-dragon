@@ -1,6 +1,3 @@
-// add timejumps
-// check: "check this"
-
 {
    "episodes":[
       {
@@ -14,6 +11,7 @@
             {
                "sceneStart":"0:00:06",
                "sceneEnd":"0:00:22",
+               "timeline":101,
                "location":"The Riverlands",
                "subLocation":"Harrenhal",
                "characters":[]
@@ -38,8 +36,8 @@
                "location":"The Riverlands",
                "subLocation":"Harrenhal",
                "characters":[
-                  {"name":"Jahaerys Targaryen", "title":"King"},
-                  {"name":"Viserys Targaryen"},
+                  {"name":"Jahaerys I Targaryen", "title":"King"},
+                  {"name":"Viserys I Targaryen"},
                   {"name":"Aemma Arryn"},
                   {"name":"Corlys Velaryon"},
                   {"name":"Rhaenys Targaryen"},
@@ -53,8 +51,8 @@
                "location":"The Riverlands",
                "subLocation":"Harrenhal",
                "characters":[
-                  {"name":"Jahaerys Targaryen", "title":"King"},
-                  {"name":"Viserys Targaryen"},
+                  {"name":"Jahaerys I Targaryen", "title":"King"},
+                  {"name":"Viserys I Targaryen"},
                   {"name":"Aemma Arryn"},
                   {"name":"Corlys Velaryon"},
                   {"name":"Rhaenys Targaryen"},
@@ -75,8 +73,8 @@
                "location":"The Riverlands",
                "subLocation":"Harrenhal",
                "characters":[
-                  {"name":"Jahaerys Targaryen", "title":"King"},
-                  {"name":"Viserys Targaryen"},
+                  {"name":"Jahaerys I Targaryen", "title":"King"},
+                  {"name":"Viserys I Targaryen"},
                   {"name":"Aemma Arryn"},
                   {"name":"Corlys Velaryon"},
                   {"name":"Rhaenys Targaryen"},
@@ -89,7 +87,7 @@
                "sceneEnd":"0:02:57",
                "location":"The Crownlands",
                "subLocation":"Outside King's Landing",
-               "timejump": -172,
+               "timeline": 110,
                "characters":[
                ]
             },
@@ -301,7 +299,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -325,7 +323,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -387,7 +385,7 @@
                "location":"The Crownlands",
                "subLocation":"King's Landing",
                "characters":[
-                  {"name":"Viserys Targaryen", "title":"King"},
+                  {"name":"Viserys I Targaryen", "title":"King"},
                   {"name":"Otto Hightower", "title":"Hand"},
                   {"name":"Grand Maester Mellos"},
                   {"name":"Mickon"}
@@ -400,7 +398,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -489,7 +487,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -522,7 +520,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -574,7 +572,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -611,7 +609,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -648,7 +646,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -677,7 +675,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -715,7 +713,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -745,7 +743,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -784,7 +782,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -816,7 +814,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -846,7 +844,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -876,7 +874,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -916,7 +914,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -960,7 +958,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -1033,7 +1031,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -1085,7 +1083,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -1137,7 +1135,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -1181,7 +1179,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -1225,7 +1223,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -1291,7 +1289,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -1330,7 +1328,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -1380,7 +1378,7 @@
                   {"name":"Laena Velaryon", "age":"child"},
                   {"name":"Harrold Westerling"},
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -1422,7 +1420,7 @@
                "characters":[
                   {"name":"Otto Hightower", "title":"Hand"},
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -1463,7 +1461,7 @@
                "characters":[
                   {"name":"Otto Hightower", "title":"Hand"},
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -1504,7 +1502,7 @@
                "characters":[
                   {"name":"Otto Hightower", "title":"Hand"},
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -1547,7 +1545,7 @@
                "location":"The Crownlands",
                "subLocation":"King's Landing",
                "characters":[
-                  {"name":"Viserys Targaryen", "title":"King"}
+                  {"name":"Viserys I Targaryen", "title":"King"}
                ]
             },
             {
@@ -1556,7 +1554,7 @@
                "location":"The Crownlands",
                "subLocation":"King's Landing",
                "characters":[
-                  {"name":"Viserys Targaryen", "title":"King"},
+                  {"name":"Viserys I Targaryen", "title":"King"},
                   {"name":"Ryam Redwyne"},
                   {"name":"Alicent Hightower", "age":"adolescent"}
                ]
@@ -1567,7 +1565,7 @@
                "location":"The Crownlands",
                "subLocation":"King's Landing",
                "characters":[
-                  {"name":"Viserys Targaryen", "title":"King"},
+                  {"name":"Viserys I Targaryen", "title":"King"},
                   {"name":"Alicent Hightower", "age":"adolescent"}
                ]
             },
@@ -1599,7 +1597,7 @@
                "characters":[
                   {"name":"Otto Hightower", "title":"Hand"},
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -1635,7 +1633,7 @@
                "characters":[
                   {"name":"Otto Hightower", "title":"Hand"},
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -1668,7 +1666,7 @@
                      ]
                   },
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -1691,7 +1689,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -1709,7 +1707,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -1729,7 +1727,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -1758,7 +1756,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -1787,7 +1785,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -1823,7 +1821,7 @@
                   {"name":"Otto Hightower", "title":"Hand"},
                   {"name":"Lyonel Strong"},
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -1862,7 +1860,7 @@
                   {"name":"Otto Hightower", "title":"Hand"},
                   {"name":"Lyonel Strong"},
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -1884,7 +1882,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -1910,7 +1908,7 @@
                   {"name":"Otto Hightower", "title":"Hand"},
                   {"name":"Lyonel Strong"},
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -1962,7 +1960,7 @@
                   {"name":"Otto Hightower", "title":"Hand"},
                   {"name":"Lyonel Strong"},
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -1987,7 +1985,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -2013,7 +2011,7 @@
                   {"name":"Otto Hightower", "title":"Hand"},
                   {"name":"Lyonel Strong"},
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -2039,7 +2037,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -2065,7 +2063,7 @@
                   {"name":"Otto Hightower", "title":"Hand"},
                   {"name":"Lyonel Strong"},
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -2091,7 +2089,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -2121,7 +2119,7 @@
                   {"name":"Otto Hightower", "title":"Hand"},
                   {"name":"Lyonel Strong"},
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -2199,7 +2197,7 @@
                   {"name":"Otto Hightower", "title":"Hand"},
                   {"name":"Lyonel Strong"},
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -2231,6 +2229,7 @@
             {
                "sceneStart":"0:03:12",
                "sceneEnd":"0:03:37",
+               "timeline":111,
                "location":"The Narrow Sea",
                "subLocation":"Stepstones",
                "characters":[
@@ -2243,7 +2242,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -2267,7 +2266,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -2318,7 +2317,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -2355,7 +2354,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -2375,7 +2374,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -2394,7 +2393,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King"
                   },
                   {"name":"Grand Maester Mellos"},
@@ -2417,7 +2416,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -2436,7 +2435,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -2456,7 +2455,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -2487,7 +2486,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -2506,7 +2505,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -2527,7 +2526,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -2842,7 +2841,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King"
                   }
                ]
@@ -2854,7 +2853,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -2873,7 +2872,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -2904,7 +2903,7 @@
                "characters":[
                   {"name":"Rhaenyra Targaryen", "age":"adolescent"},
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King"
                   }
                ]
@@ -2916,7 +2915,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -2934,7 +2933,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -2960,7 +2959,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -3075,6 +3074,7 @@
             {
                "sceneStart":"0:02:47",
                "sceneEnd":"0:03:15",
+               "timeline":114,
                "location":"The Narrow Sea",
                "subLocation":"Stepstones",
                "characters":[
@@ -3246,7 +3246,7 @@
                "characters":[
                   {"name":"Noble"},
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -3256,7 +3256,7 @@
                      ]
                   },
                   {"name":"Alicent Hightower", "age":"adolescent"},
-                  {"name":"Aegon Targaryen", "age":"infant"}
+                  {"name":"Aegon II Targaryen", "age":"infant"}
                ]
             },
             {
@@ -3267,7 +3267,7 @@
                "characters":[
                   {"name":"Noble"},
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -3277,7 +3277,7 @@
                      ]
                   },
                   {"name":"Alicent Hightower", "age":"adolescent"},
-                  {"name":"Aegon Targaryen", "age":"infant"},
+                  {"name":"Aegon II Targaryen", "age":"infant"},
                   {"name":"Otto Hightower", "title":"Hand"},
                   {"name":"Hobert Hightower"},
                   {"name":"Lyonel Strong"}
@@ -3291,7 +3291,7 @@
                "characters":[
                   {"name":"Noble"},
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -3301,7 +3301,7 @@
                      ]
                   },
                   {"name":"Alicent Hightower", "age":"adolescent"},
-                  {"name":"Aegon Targaryen", "age":"infant"},
+                  {"name":"Aegon II Targaryen", "age":"infant"},
                   {"name":"Tyland Lannister"},
                   {"name":"Wet Nurse"},
                   {"name":"Royal Handmaiden"},
@@ -3316,7 +3316,7 @@
                "characters":[
                   {"name":"Noble"},
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -3326,7 +3326,7 @@
                      ]
                   },
                   {"name":"Alicent Hightower", "age":"adolescent"},
-                  {"name":"Aegon Targaryen", "age":"infant"},
+                  {"name":"Aegon II Targaryen", "age":"infant"},
                   {"name":"Tyland Lannister"},
                   {"name":"Wet Nurse"},
                   {"name":"Royal Handmaiden"},
@@ -3382,7 +3382,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -3392,7 +3392,7 @@
                      ]
                   },
                   {"name":"Alicent Hightower", "age":"adolescent"},
-                  {"name":"Aegon Targaryen", "age":"infant"},
+                  {"name":"Aegon II Targaryen", "age":"infant"},
                   {"name":"Wet Nurse"},
                   {"name":"Rhaenyra Targaryen", "age":"adolescent"},
                   {"name":"Royal Handmaiden"}
@@ -3455,7 +3455,7 @@
                   {"name":"Brett Lannister"},
                   {"name":"Otto Hightower", "title":"Hand"},
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -3465,7 +3465,7 @@
                      ]
                   },
                   {"name":"Alicent Hightower", "age":"adolescent"},
-                  {"name":"Aegon Targaryen", "age":"infant"},
+                  {"name":"Aegon II Targaryen", "age":"infant"},
                   {"name":"Wet Nurse"},
                   {"name":"Royal Handmaiden"}
                ]
@@ -3486,7 +3486,7 @@
                   {"name":"Brett Lannister"},
                   {"name":"Otto Hightower", "title":"Hand"},
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -3496,7 +3496,7 @@
                      ]
                   },
                   {"name":"Alicent Hightower", "age":"adolescent"},
-                  {"name":"Aegon Targaryen", "age":"infant"},
+                  {"name":"Aegon II Targaryen", "age":"infant"},
                   {"name":"Wet Nurse"},
                   {"name":"Royal Handmaiden"},
                   {"name":"Hobert Hightower"},
@@ -3528,7 +3528,7 @@
                "subLocation":"The Kingswood",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -3546,7 +3546,7 @@
                "subLocation":"The Kingswood",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -3652,7 +3652,7 @@
                "characters":[
                   {"name":"Rhaenyra Targaryen", "age":"adolescent"},
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -3677,7 +3677,7 @@
                "subLocation":"The Kingswood",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -3758,7 +3758,7 @@
                "subLocation":"The Kingswood",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -3783,7 +3783,7 @@
                "subLocation":"The Kingswood",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -3803,7 +3803,7 @@
                "subLocation":"The Kingswood",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -3823,7 +3823,7 @@
                "subLocation":"The Kingswood",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -3842,7 +3842,7 @@
                "location":"The Crownlands",
                "subLocation":"The Kingswood",
                "characters":[
-                  {"name":"Aegon Targaryen", "age":"infant"},
+                  {"name":"Aegon II Targaryen", "age":"infant"},
                   {"name":"Wet Nurse"},
                   {"name":"Royal Handmaiden"}
                ]
@@ -3854,7 +3854,7 @@
                "subLocation":"The Kingswood",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -3886,7 +3886,7 @@
                "subLocation":"The Kingswood",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -3915,7 +3915,7 @@
                "subLocation":"The Kingswood",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -3933,7 +3933,7 @@
                "location":"The Crownlands",
                "subLocation":"The Kingswood",
                "characters":[
-                  {"name":"Aegon Targaryen", "age":"infant"},
+                  {"name":"Aegon II Targaryen", "age":"infant"},
                   {"name":"Wet Nurse"}
                ]
             },
@@ -3944,7 +3944,7 @@
                "subLocation":"The Kingswood",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -3963,7 +3963,7 @@
                "subLocation":"The Kingswood",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -3989,7 +3989,7 @@
                "subLocation":"The Kingswood",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -4019,7 +4019,7 @@
                "subLocation":"The Kingswood",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -4037,7 +4037,7 @@
                "subLocation":"The Kingswood",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -4056,7 +4056,7 @@
                "subLocation":"The Kingswood",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -4088,7 +4088,7 @@
                "subLocation":"The Kingswood",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -4106,7 +4106,7 @@
                "subLocation":"The Kingswood",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -4133,7 +4133,7 @@
                "subLocation":"The Kingswood",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -4177,7 +4177,7 @@
                   {"name":"Harrold Westerling"},
                   {"name":"Otto Hightower", "title":"Hand"},
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -4190,7 +4190,7 @@
                   {"name":"Lynesse Hightower"},
                   {"name":"Ceira Lannister"},
                   {"name":"Joselyn Redwyne"},
-                  {"name":"Aegon Targaryen", "age":"infant"},
+                  {"name":"Aegon II Targaryen", "age":"infant"},
                   {"name":"Royal Handmaiden"},
                   {"name":"Harwin Strong"},
                   {"name":"Larys Strong"}
@@ -4212,7 +4212,7 @@
                "characters":[
                   {"name":"Otto Hightower", "title":"Hand"},
                   {"name":"Alicent Hightower", "age":"adolescent"},
-                  {"name":"Aegon Targaryen", "age":"infant"},
+                  {"name":"Aegon II Targaryen", "age":"infant"},
                   {"name":"Royal Handmaiden"},
                   {"name":"Wet Nurse"}
                ]
@@ -4234,7 +4234,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -4254,7 +4254,7 @@
                "characters":[
                   {"name":"Rhaenyra Targaryen", "age":"adolescent"},
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -4274,7 +4274,7 @@
                "characters":[
                   {"name":"Rhaenyra Targaryen", "age":"adolescent"},
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -4294,7 +4294,7 @@
                "characters":[
                   {"name":"Rhaenyra Targaryen", "age":"adolescent"},
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -4312,7 +4312,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -4688,13 +4688,13 @@
                      "age":"adolescent",
                      "dragonrider":[
                         {
-                           "name":"Sea Smoke",
+                           "name":"Seasmoke",
                            "action":"riding"
                         }
                      ]
                   },
                   {
-                     "name":"Sea Smoke",
+                     "name":"Seasmoke",
                      "dragonrider":[
                         {
                            "name":"Laenor Velaryon",
@@ -4725,7 +4725,7 @@
                      "alive":false,
                      "mannerOfDeath": "Dragon fire",
                      "killedBy": [
-                        "Sea Smoke"
+                        "Seasmoke"
                      ]
                   },
                   {"name":"Corlys Velaryon"},
@@ -4735,13 +4735,13 @@
                      "age":"adolescent",
                      "dragonrider":[
                         {
-                           "name":"Sea Smoke",
+                           "name":"Seasmoke",
                            "action":"riding"
                         }
                      ]
                   },
                   {
-                     "name":"Sea Smoke",
+                     "name":"Seasmoke",
                      "dragonrider":[
                         {
                            "name":"Laenor Velaryon",
@@ -4774,13 +4774,13 @@
                      "age":"adolescent",
                      "dragonrider":[
                         {
-                           "name":"Sea Smoke",
+                           "name":"Seasmoke",
                            "action":"riding"
                         }
                      ]
                   },
                   {
-                     "name":"Sea Smoke",
+                     "name":"Seasmoke",
                      "dragonrider":[
                         {
                            "name":"Laenor Velaryon",
@@ -4812,13 +4812,13 @@
                      "age":"adolescent",
                      "dragonrider":[
                         {
-                           "name":"Sea Smoke",
+                           "name":"Seasmoke",
                            "action":"riding"
                         }
                      ]
                   },
                   {
-                     "name":"Sea Smoke",
+                     "name":"Seasmoke",
                      "dragonrider":[
                         {
                            "name":"Laenor Velaryon",
@@ -4841,13 +4841,13 @@
                      "age":"adolescent",
                      "dragonrider":[
                         {
-                           "name":"Sea Smoke",
+                           "name":"Seasmoke",
                            "action":"riding"
                         }
                      ]
                   },
                   {
-                     "name":"Sea Smoke",
+                     "name":"Seasmoke",
                      "dragonrider":[
                         {
                            "name":"Laenor Velaryon",
@@ -4930,13 +4930,13 @@
                      "age":"adolescent",
                      "dragonrider":[
                         {
-                           "name":"Sea Smoke",
+                           "name":"Seasmoke",
                            "action":"riding"
                         }
                      ]
                   },
                   {
-                     "name":"Sea Smoke",
+                     "name":"Seasmoke",
                      "dragonrider":[
                         {
                            "name":"Laenor Velaryon",
@@ -5074,7 +5074,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -5096,7 +5096,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -5129,7 +5129,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -5154,7 +5154,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -5189,7 +5189,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -5223,7 +5223,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -5266,7 +5266,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -5389,7 +5389,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King"
                   },
                   {"name":"Alicent Hightower", "age":"adolescent"}
@@ -5402,7 +5402,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King"
                   },
                   {"name":"Alicent Hightower", "age":"adolescent"}
@@ -5552,13 +5552,13 @@
                      "name":"Alicent Hightower",
                      "age":"adolescent",
                      "sex": {
-                        "with": ["Viserys Targaryen"],
+                        "with": ["Viserys I Targaryen"],
                         "when": "present",
                         "type": "duty"
                      }
                   },
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "sex": {
                         "with": ["Alicent Hightower"],
@@ -5588,13 +5588,13 @@
                      "name":"Alicent Hightower",
                      "age":"adolescent",
                      "sex": {
-                        "with": ["Viserys Targaryen"],
+                        "with": ["Viserys I Targaryen"],
                         "when": "present",
                         "type": "duty"
                      }
                   },
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "sex": {
                         "with": ["Alicent Hightower"],
@@ -5646,7 +5646,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {"name":"Alicent Hightower", "age":"adolescent"},
-                  {"name":"Viserys Targaryen", "title":"King"}
+                  {"name":"Viserys I Targaryen", "title":"King"}
                ]
             },
             {
@@ -5768,7 +5768,7 @@
                "location":"The Crownlands",
                "subLocation":"King's Landing",
                "characters":[
-                  {"name":"Viserys Targaryen", "title":"King"},
+                  {"name":"Viserys I Targaryen", "title":"King"},
                   {"name":"Alicent Hightower", "age":"adolescent"}
                ]
             },
@@ -5778,7 +5778,7 @@
                "location":"The Crownlands",
                "subLocation":"King's Landing",
                "characters":[
-                  {"name":"Viserys Targaryen", "title":"King"},
+                  {"name":"Viserys I Targaryen", "title":"King"},
                   {"name":"Otto Hightower", "title":"Hand"},
                   {"name":"Alicent Hightower", "age":"adolescent"}
                ]
@@ -5789,7 +5789,7 @@
                "location":"The Crownlands",
                "subLocation":"King's Landing",
                "characters":[
-                  {"name":"Viserys Targaryen", "title":"King"},
+                  {"name":"Viserys I Targaryen", "title":"King"},
                   {"name":"Alicent Hightower", "age":"adolescent"}
                ]
             },
@@ -5859,7 +5859,7 @@
                "characters":[
                   {"name":"Daemon Targaryen"},
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -5885,7 +5885,7 @@
                "location":"The Crownlands",
                "subLocation":"King's Landing",
                "characters":[
-                  {"name":"Viserys Targaryen", "title":"King"},
+                  {"name":"Viserys I Targaryen", "title":"King"},
                   {"name":"Alicent Hightower", "age":"adolescent"}
                ]
             },
@@ -5917,7 +5917,7 @@
                "characters":[
                   {"name":"Rhaenyra Targaryen", "age":"adolescent"},
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -5930,13 +5930,13 @@
             },
             {
                "sceneStart":"0:58:14",
-               "sceneEnd":"1:01:15", // check this
+               "sceneEnd":"1:01:05",
                "location":"The Crownlands",
                "subLocation":"King's Landing",
                "characters":[
                   {"name":"Otto Hightower", "title":"Hand"},
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -5948,14 +5948,14 @@
                ]
             },
             {
-               "sceneStart":"1:01:15", // check this
+               "sceneStart":"1:01:05",
                "sceneEnd":"1:01:27",
                "location":"The Crownlands",
                "subLocation":"King's Landing",
                "characters":[
                   {"name":"Otto Hightower"},
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -6056,7 +6056,7 @@
                "subLocation":"The Gullet",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -6075,7 +6075,7 @@
                "subLocation":"The Gullet",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -6096,7 +6096,7 @@
                "subLocation":"The Gullet",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -6161,7 +6161,7 @@
                "characters":[
                   {"name":"Rhaenyra Targaryen", "age":"adolescent"},
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -6195,7 +6195,7 @@
                "subLocation":"Driftmark",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -6216,7 +6216,7 @@
                "subLocation":"Driftmark",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -6240,7 +6240,7 @@
                "subLocation":"Driftmark",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -6292,7 +6292,7 @@
                "subLocation":"Driftmark",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -6327,7 +6327,7 @@
                "subLocation":"Driftmark",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -6347,7 +6347,7 @@
                "characters":[
                   {"name":"Corlys Velaryon"},
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -6368,7 +6368,7 @@
                   {"name":"Corlys Velaryon"},
                   {"name":"Rhaenys Targaryen"},
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -6481,7 +6481,7 @@
                "characters":[
                   {"name":"Alicent Hightower", "age":"adolescent"},
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King"
                   },
                   {"name":"Lyonel Strong"},
@@ -6580,7 +6580,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King"
                   },
                   {"name":"Lyonel Strong"},
@@ -6595,7 +6595,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King"
                   },
                   {"name":"Lyonel Strong"},
@@ -6609,7 +6609,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King"
                   },
                   {"name":"Lyonel Strong"}
@@ -6626,13 +6626,13 @@
                      "age":"adolescent",
                      "dragonrider":[
                         {
-                           "name":"Sea Smoke",
+                           "name":"Seasmoke",
                            "action":"riding"
                         }
                      ]
                   },
                   {
-                     "name":"Sea Smoke",
+                     "name":"Seasmoke",
                      "dragonrider":[
                         {
                            "name":"Laenor Velaryon",
@@ -6680,13 +6680,13 @@
                      "age":"adolescent",
                      "dragonrider":[
                         {
-                           "name":"Sea Smoke",
+                           "name":"Seasmoke",
                            "action":"riding"
                         }
                      ]
                   },
                   {
-                     "name":"Sea Smoke",
+                     "name":"Seasmoke",
                      "dragonrider":[
                         {
                            "name":"Laenor Velaryon",
@@ -6752,7 +6752,7 @@
                   {"name":"Lynesse Hightower"},
                   {"name":"Lyonel Strong"},
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -6778,7 +6778,7 @@
                   {"name":"Lynesse Hightower"},
                   {"name":"Lyonel Strong"},
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -6804,7 +6804,7 @@
                   {"name":"Hobert Hightower"},
                   {"name":"Lynesse Hightower"},
                   {"name":"Lyonel Strong"},
-                  {"name":"Viserys Targaryen","title":"King",
+                  {"name":"Viserys I Targaryen","title":"King",
                      "weapon": [{"action": "has","name": "Valyrian Steel Dagger"}]
                   },
                   {"name":"Rhaenyra Targaryen", "age":"adolescent"},
@@ -6830,7 +6830,7 @@
                   {"name":"Hobert Hightower"},
                   {"name":"Lynesse Hightower"},
                   {"name":"Lyonel Strong"},
-                  {"name":"Viserys Targaryen","title":"King",
+                  {"name":"Viserys I Targaryen","title":"King",
                      "weapon": [{"action": "has","name": "Valyrian Steel Dagger"}]
                   },
                   {"name":"Rhaenyra Targaryen", "age":"adolescent"},
@@ -6858,7 +6858,7 @@
                   {"name":"Hobert Hightower"},
                   {"name":"Lynesse Hightower"},
                   {"name":"Lyonel Strong"},
-                  {"name":"Viserys Targaryen","title":"King",
+                  {"name":"Viserys I Targaryen","title":"King",
                      "weapon": [{"action": "has","name": "Valyrian Steel Dagger"}]
                   },
                   {"name":"Rhaenyra Targaryen", "age":"adolescent"},
@@ -6887,7 +6887,7 @@
                   {"name":"Hobert Hightower"},
                   {"name":"Lynesse Hightower"},
                   {"name":"Lyonel Strong"},
-                  {"name":"Viserys Targaryen","title":"King",
+                  {"name":"Viserys I Targaryen","title":"King",
                      "weapon": [{"action": "has","name": "Valyrian Steel Dagger"}]
                   },
                   {"name":"Rhaenyra Targaryen", "age":"adolescent"},
@@ -6918,7 +6918,7 @@
                   {"name":"Hobert Hightower"},
                   {"name":"Lynesse Hightower"},
                   {"name":"Lyonel Strong"},
-                  {"name":"Viserys Targaryen","title":"King",
+                  {"name":"Viserys I Targaryen","title":"King",
                      "weapon": [{"action": "has","name": "Valyrian Steel Dagger"}]
                   },
                   {"name":"Rhaenyra Targaryen", "age":"adolescent"},
@@ -6950,7 +6950,7 @@
                   {"name":"Hobert Hightower"},
                   {"name":"Lynesse Hightower"},
                   {"name":"Lyonel Strong"},
-                  {"name":"Viserys Targaryen","title":"King",
+                  {"name":"Viserys I Targaryen","title":"King",
                      "weapon": [{"action": "has","name": "Valyrian Steel Dagger"}]
                   },
                   {"name":"Rhaenyra Targaryen", "age":"adolescent"},
@@ -6983,7 +6983,7 @@
                   {"name":"Hobert Hightower"},
                   {"name":"Lynesse Hightower"},
                   {"name":"Lyonel Strong"},
-                  {"name":"Viserys Targaryen","title":"King",
+                  {"name":"Viserys I Targaryen","title":"King",
                      "weapon": [{"action": "has","name": "Valyrian Steel Dagger"}]
                   },
                   {"name":"Rhaenyra Targaryen", "age":"adolescent"},
@@ -7016,7 +7016,7 @@
                   {"name":"Hobert Hightower"},
                   {"name":"Lynesse Hightower"},
                   {"name":"Lyonel Strong"},
-                  {"name":"Viserys Targaryen","title":"King",
+                  {"name":"Viserys I Targaryen","title":"King",
                      "weapon": [{"action": "has","name": "Valyrian Steel Dagger"}]
                   },
                   {"name":"Rhaenyra Targaryen", "age":"adolescent"},
@@ -7049,7 +7049,7 @@
                   {"name":"Hobert Hightower"},
                   {"name":"Lynesse Hightower"},
                   {"name":"Lyonel Strong"},
-                  {"name":"Viserys Targaryen","title":"King",
+                  {"name":"Viserys I Targaryen","title":"King",
                      "weapon": [{"action": "has","name": "Valyrian Steel Dagger"}]
                   },
                   {"name":"Rhaenyra Targaryen", "age":"adolescent"},
@@ -7089,7 +7089,7 @@
                   {"name":"Hobert Hightower"},
                   {"name":"Lynesse Hightower"},
                   {"name":"Lyonel Strong"},
-                  {"name":"Viserys Targaryen","title":"King",
+                  {"name":"Viserys I Targaryen","title":"King",
                      "weapon": [{"action": "has","name": "Valyrian Steel Dagger"}]
                   },
                   {"name":"Rhaenyra Targaryen", "age":"adolescent"},
@@ -7113,7 +7113,7 @@
                "location":"The Crownlands",
                "subLocation":"King's Landing",
                "characters":[
-                  {"name":"Viserys Targaryen","title":"King",
+                  {"name":"Viserys I Targaryen","title":"King",
                      "weapon": [{"action": "has","name": "Valyrian Steel Dagger"}]
                   },
                   {"name":"Rhaenyra Targaryen","age":"adolescent"},
@@ -7139,7 +7139,7 @@
                "location":"The Crownlands",
                "subLocation":"King's Landing",
                "characters":[
-                  {"name":"Viserys Targaryen","title":"King",
+                  {"name":"Viserys I Targaryen","title":"King",
                      "weapon": [{"action": "has","name": "Valyrian Steel Dagger"}]
                   },
                   {"name":"Rhaenyra Targaryen","age":"adolescent"},
@@ -7165,7 +7165,7 @@
                "location":"The Crownlands",
                "subLocation":"King's Landing",
                "characters":[
-                  {"name":"Viserys Targaryen","title":"King",
+                  {"name":"Viserys I Targaryen","title":"King",
                      "weapon": [{"action": "has","name": "Valyrian Steel Dagger"}]
                   },
                   {"name":"Rhaenyra Targaryen","age":"adolescent"},
@@ -7191,7 +7191,7 @@
                "location":"The Crownlands",
                "subLocation":"King's Landing",
                "characters":[
-                  {"name":"Viserys Targaryen","title":"King",
+                  {"name":"Viserys I Targaryen","title":"King",
                      "weapon": [{"action": "has","name": "Valyrian Steel Dagger"}]
                   },
                   {
@@ -7235,7 +7235,7 @@
                "location":"The Crownlands",
                "subLocation":"King's Landing",
                "characters":[
-                  {"name":"Viserys Targaryen","title":"King",
+                  {"name":"Viserys I Targaryen","title":"King",
                      "weapon": [{"action": "has","name": "Valyrian Steel Dagger"}]
                   },
                   {"name":"Rhaenyra Targaryen","age":"adolescent"},
@@ -7271,7 +7271,7 @@
                "location":"The Crownlands",
                "subLocation":"King's Landing",
                "characters":[
-                  {"name":"Viserys Targaryen","title":"King",
+                  {"name":"Viserys I Targaryen","title":"King",
                      "weapon": [{"action": "has","name": "Valyrian Steel Dagger"}]
                   },
                   {"name":"Rhaenyra Targaryen","age":"adolescent"},
@@ -7295,6 +7295,7 @@
             {
                "sceneStart":"0:02:57",
                "sceneEnd":"0:03:48",
+               "timeline":124,
                "location":"The Crownlands",
                "subLocation":"King's Landing",
                "characters":[
@@ -7426,7 +7427,7 @@
                   {"name":"Laenor Velaryon"},
                   {"name":"Alicent Hightower"},
                   {"name":"Talya"},
-                  {"name":"Viserys Targaryen","title":"King"}
+                  {"name":"Viserys I Targaryen","title":"King"}
                ]
             },
             {
@@ -7489,7 +7490,7 @@
                   {"name":"Aemond Targaryen", "age":"child"},
                   {"name":"Jacaerys Velaryon", "age":"child"},
                   {"name":"Lucerys Velaryon", "age":"child"},
-                  {"name":"Aegon Targaryen", "age":"adolescent"}
+                  {"name":"Aegon II Targaryen", "age":"adolescent"}
                ]
             },
             {
@@ -7501,7 +7502,7 @@
                   {"name":"Aemond Targaryen", "age":"child"},
                   {"name":"Jacaerys Velaryon", "age":"child"},
                   {"name":"Lucerys Velaryon", "age":"child"},
-                  {"name":"Aegon Targaryen", "age":"adolescent"}
+                  {"name":"Aegon II Targaryen", "age":"adolescent"}
                ]
             },
             {
@@ -7517,7 +7518,7 @@
                   {"name":"Aemond Targaryen", "age":"child"},
                   {"name":"Jacaerys Velaryon", "age":"child"},
                   {"name":"Lucerys Velaryon", "age":"child"},
-                  {"name":"Aegon Targaryen", "age":"adolescent"}
+                  {"name":"Aegon II Targaryen", "age":"adolescent"}
                ]
             },
             {
@@ -7567,7 +7568,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {"name":"Alicent Hightower"},
-                  {"name":"Viserys Targaryen","title":"King",
+                  {"name":"Viserys I Targaryen","title":"King",
                      "weapon": [{"action": "has","name": "Valyrian Steel Dagger"}]
                   },
                   {"name":"Eddard"}
@@ -7580,7 +7581,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {"name":"Alicent Hightower"},
-                  {"name":"Viserys Targaryen","title":"King",
+                  {"name":"Viserys I Targaryen","title":"King",
                      "weapon": [{"action": "has","name": "Valyrian Steel Dagger"}]
                   }
                ]
@@ -7601,7 +7602,7 @@
                "location":"The Crownlands",
                "subLocation":"King's Landing",
                "characters":[
-                  {"name":"Aegon Targaryen", "age":"adolescent"}
+                  {"name":"Aegon II Targaryen", "age":"adolescent"}
                ]
             },
             {
@@ -7610,7 +7611,7 @@
                "location":"The Crownlands",
                "subLocation":"King's Landing",
                "characters":[
-                  {"name":"Aegon Targaryen", "age":"adolescent"},
+                  {"name":"Aegon II Targaryen", "age":"adolescent"},
                   {"name":"Alicent Hightower"}
                ]
             },
@@ -7767,7 +7768,7 @@
                   {"name":"Aemond Targaryen", "age":"child"},
                   {"name":"Jacaerys Velaryon", "age":"child"},
                   {"name":"Lucerys Velaryon", "age":"child"},
-                  {"name":"Aegon Targaryen", "age":"adolescent"}
+                  {"name":"Aegon II Targaryen", "age":"adolescent"}
                ]
             },
             {
@@ -7780,9 +7781,9 @@
                   {"name":"Aemond Targaryen", "age":"child"},
                   {"name":"Jacaerys Velaryon", "age":"child"},
                   {"name":"Lucerys Velaryon", "age":"child"},
-                  {"name":"Aegon Targaryen", "age":"adolescent"},
+                  {"name":"Aegon II Targaryen", "age":"adolescent"},
                   {"name":"Lyonel Strong", "title":"Hand"},
-                  {"name":"Viserys Targaryen","title":"King",
+                  {"name":"Viserys I Targaryen","title":"King",
                      "weapon": [{"action": "has","name": "Valyrian Steel Dagger"}]
                   }
                ]
@@ -7797,9 +7798,9 @@
                   {"name":"Aemond Targaryen", "age":"child"},
                   {"name":"Jacaerys Velaryon", "age":"child"},
                   {"name":"Lucerys Velaryon", "age":"child"},
-                  {"name":"Aegon Targaryen", "age":"adolescent"},
+                  {"name":"Aegon II Targaryen", "age":"adolescent"},
                   {"name":"Lyonel Strong", "title":"Hand"},
-                  {"name":"Viserys Targaryen","title":"King",
+                  {"name":"Viserys I Targaryen","title":"King",
                      "weapon": [{"action": "has","name": "Valyrian Steel Dagger"}]
                   },
                   {"name":"Harwin Strong"}
@@ -7922,7 +7923,7 @@
                   {"name":"Rhaenyra Targaryen"},
                   {"name":"Alicent Hightower"},
                   {"name":"Lyonel Strong", "title":"Hand"},
-                  {"name":"Viserys Targaryen","title":"King",
+                  {"name":"Viserys I Targaryen","title":"King",
                      "weapon": [{"action": "has","name": "Valyrian Steel Dagger"}]
                   },
                   {"name":"Tyland Lannister"},
@@ -7939,7 +7940,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {"name":"Alicent Hightower"},
-                  {"name":"Viserys Targaryen","title":"King",
+                  {"name":"Viserys I Targaryen","title":"King",
                      "weapon": [{"action": "has","name": "Valyrian Steel Dagger"}]
                   },
                   {"name":"Criston Cole"},
@@ -7953,7 +7954,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {"name":"Alicent Hightower"},
-                  {"name":"Viserys Targaryen","title":"King",
+                  {"name":"Viserys I Targaryen","title":"King",
                      "weapon": [{"action": "has","name": "Valyrian Steel Dagger"}]
                   },
                   {"name":"Criston Cole"},
@@ -7967,7 +7968,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {"name":"Alicent Hightower"},
-                  {"name":"Viserys Targaryen","title":"King",
+                  {"name":"Viserys I Targaryen","title":"King",
                      "weapon": [{"action": "has","name": "Valyrian Steel Dagger"}]
                   }
                ]
@@ -7979,7 +7980,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {"name":"Alicent Hightower"},
-                  {"name":"Viserys Targaryen","title":"King",
+                  {"name":"Viserys I Targaryen","title":"King",
                      "weapon": [{"action": "has","name": "Valyrian Steel Dagger"}]
                   },
                   {"name":"Criston Cole"},
@@ -7993,7 +7994,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {"name":"Alicent Hightower"},
-                  {"name":"Viserys Targaryen","title":"King",
+                  {"name":"Viserys I Targaryen","title":"King",
                      "weapon": [{"action": "has","name": "Valyrian Steel Dagger"}]
                   },
                   {"name":"Lyonel Strong", "title":"Hand"}
@@ -8006,7 +8007,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {"name":"Alicent Hightower"},
-                  {"name":"Viserys Targaryen","title":"King",
+                  {"name":"Viserys I Targaryen","title":"King",
                      "weapon": [{"action": "has","name": "Valyrian Steel Dagger"}]
                   }
                ]
@@ -8018,7 +8019,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {"name":"Alicent Hightower"},
-                  {"name":"Viserys Targaryen","title":"King",
+                  {"name":"Viserys I Targaryen","title":"King",
                      "weapon": [{"action": "has","name": "Valyrian Steel Dagger"}]
                   },
                   {"name":"Criston Cole"}
@@ -8248,7 +8249,7 @@
                "location":"The Crownlands",
                "subLocation":"King's Landing",
                "characters":[
-                  {"name":"Viserys Targaryen", "title":"King"}
+                  {"name":"Viserys I Targaryen", "title":"King"}
                ]
             },
             {
@@ -8329,7 +8330,7 @@
                   {"name":"Vaemond Velaryon"},
                   {"name":"Daemon Targaryen"},
                   {"name":"Harrold Westerling"},
-                  {"name":"Viserys Targaryen","title":"King",
+                  {"name":"Viserys I Targaryen","title":"King",
                      "weapon": [{"action": "has","name": "Valyrian Steel Dagger"}]
                   },
                   {"name":"Criston Cole"},
@@ -8341,7 +8342,7 @@
                   {"name":"Rhaena Targaryen", "age":"child"},
                   {"name":"Jacaerys Velaryon", "age":"child"},
                   {"name":"Lucerys Velaryon", "age":"child"},
-                  {"name":"Aegon Targaryen", "age":"adolescent"},
+                  {"name":"Aegon II Targaryen", "age":"adolescent"},
                   {"name":"Aemond Targaryen", "age":"child"},
                   {"name":"Helaena Targaryen", "age":"child"},
                   {"name":"Laenor Velaryon"},
@@ -8373,7 +8374,7 @@
                   {"name":"Vaemond Velaryon"},
                   {"name":"Daemon Targaryen"},
                   {"name":"Harrold Westerling"},
-                  {"name":"Viserys Targaryen","title":"King",
+                  {"name":"Viserys I Targaryen","title":"King",
                      "weapon": [{"action": "has","name": "Valyrian Steel Dagger"}]
                   },
                   {"name":"Criston Cole"},
@@ -8385,7 +8386,7 @@
                   {"name":"Rhaena Targaryen", "age":"child"},
                   {"name":"Jacaerys Velaryon", "age":"child"},
                   {"name":"Lucerys Velaryon", "age":"child"},
-                  {"name":"Aegon Targaryen", "age":"adolescent"},
+                  {"name":"Aegon II Targaryen", "age":"adolescent"},
                   {"name":"Aemond Targaryen", "age":"child"},
                   {"name":"Helaena Targaryen", "age":"child"},
                   {"name":"Laenor Velaryon"},
@@ -8402,7 +8403,7 @@
                   {"name":"Vaemond Velaryon"},
                   {"name":"Daemon Targaryen"},
                   {"name":"Harrold Westerling"},
-                  {"name":"Viserys Targaryen","title":"King",
+                  {"name":"Viserys I Targaryen","title":"King",
                      "weapon": [{"action": "has","name": "Valyrian Steel Dagger"}]
                   },
                   {"name":"Criston Cole"},
@@ -8414,7 +8415,7 @@
                   {"name":"Rhaena Targaryen", "age":"child"},
                   {"name":"Jacaerys Velaryon", "age":"child"},
                   {"name":"Lucerys Velaryon", "age":"child"},
-                  {"name":"Aegon Targaryen", "age":"adolescent"},
+                  {"name":"Aegon II Targaryen", "age":"adolescent"},
                   {"name":"Aemond Targaryen", "age":"child"},
                   {"name":"Helaena Targaryen", "age":"child"},
                   {"name":"Larys Strong"},
@@ -8459,7 +8460,7 @@
                   {"name":"Vaemond Velaryon"},
                   {"name":"Daemon Targaryen"},
                   {"name":"Harrold Westerling"},
-                  {"name":"Viserys Targaryen","title":"King",
+                  {"name":"Viserys I Targaryen","title":"King",
                      "weapon": [{"action": "has","name": "Valyrian Steel Dagger"}]
                   },
                   {"name":"Criston Cole"},
@@ -8471,7 +8472,7 @@
                   {"name":"Rhaena Targaryen", "age":"child"},
                   {"name":"Jacaerys Velaryon", "age":"child"},
                   {"name":"Lucerys Velaryon", "age":"child"},
-                  {"name":"Aegon Targaryen", "age":"adolescent"},
+                  {"name":"Aegon II Targaryen", "age":"adolescent"},
                   {"name":"Aemond Targaryen", "age":"child"},
                   {"name":"Helaena Targaryen", "age":"child"},
                   {"name":"Larys Strong"},
@@ -8489,7 +8490,7 @@
                   {"name":"Vaemond Velaryon"},
                   {"name":"Daemon Targaryen"},
                   {"name":"Harrold Westerling"},
-                  {"name":"Viserys Targaryen","title":"King",
+                  {"name":"Viserys I Targaryen","title":"King",
                      "weapon": [{"action": "has","name": "Valyrian Steel Dagger"}]
                   },
                   {"name":"Criston Cole"},
@@ -8501,7 +8502,7 @@
                   {"name":"Rhaena Targaryen", "age":"child"},
                   {"name":"Jacaerys Velaryon", "age":"child"},
                   {"name":"Lucerys Velaryon", "age":"child"},
-                  {"name":"Aegon Targaryen", "age":"adolescent"},
+                  {"name":"Aegon II Targaryen", "age":"adolescent"},
                   {"name":"Aemond Targaryen", "age":"child"},
                   {"name":"Helaena Targaryen", "age":"child"},
                   {"name":"Larys Strong"},
@@ -8517,7 +8518,7 @@
                "characters":[
                   {"name":"Vaemond Velaryon"},
                   {"name":"Harrold Westerling"},
-                  {"name":"Viserys Targaryen","title":"King",
+                  {"name":"Viserys I Targaryen","title":"King",
                      "weapon": [{"action": "has","name": "Valyrian Steel Dagger"}]
                   },
                   {"name":"Criston Cole"},
@@ -8527,7 +8528,7 @@
                   {"name":"Rhaenys Targaryen"},
                   {"name":"Baela Targaryen", "age":"child"},
                   {"name":"Rhaena Targaryen", "age":"child"},
-                  {"name":"Aegon Targaryen", "age":"adolescent"},
+                  {"name":"Aegon II Targaryen", "age":"adolescent"},
                   {"name":"Aemond Targaryen", "age":"child"},
                   {"name":"Helaena Targaryen", "age":"child"},
                   {"name":"Larys Strong"},
@@ -8548,7 +8549,7 @@
                "location":"The Crownlands",
                "subLocation":"Driftmark",
                "characters":[
-                  {"name":"Aegon Targaryen", "age":"adolescent"}
+                  {"name":"Aegon II Targaryen", "age":"adolescent"}
                ]
             },
             {
@@ -8557,7 +8558,7 @@
                "location":"The Crownlands",
                "subLocation":"Driftmark",
                "characters":[
-                  {"name":"Aegon Targaryen", "age":"adolescent"},
+                  {"name":"Aegon II Targaryen", "age":"adolescent"},
                   {"name":"Otto Hightower", "title":"Hand"}
                ]
             },
@@ -8567,7 +8568,7 @@
                "location":"The Crownlands",
                "subLocation":"Driftmark",
                "characters":[
-                  {"name":"Aegon Targaryen", "age":"adolescent"},
+                  {"name":"Aegon II Targaryen", "age":"adolescent"},
                   {"name":"Otto Hightower", "title":"Hand"},
                   {"name":"Aemond Targaryen", "age":"child"}
                ]
@@ -8835,7 +8836,7 @@
                "location":"The Crownlands",
                "subLocation":"Driftmark",
                "characters":[
-                  {"name":"Viserys Targaryen","title":"King",
+                  {"name":"Viserys I Targaryen","title":"King",
                      "weapon": [{"action": "has","name": "Valyrian Steel Dagger"}]
                   },
                   {"name":"Alicent Hightower"},
@@ -8849,7 +8850,7 @@
                   {"name":"Otto Hightower", "title":"Hand"},
                   {"name":"Maester Kelvyn"},
                   {"name":"Talya"},
-                  {"name":"Aegon Targaryen", "age":"adolescent"},
+                  {"name":"Aegon II Targaryen", "age":"adolescent"},
                   {"name":"Helaena Targaryen", "age":"child"},
                   {"name":"Vaemond Velaryon"}
                ]
@@ -8860,7 +8861,7 @@
                "location":"The Crownlands",
                "subLocation":"Driftmark",
                "characters":[
-                  {"name":"Viserys Targaryen","title":"King",
+                  {"name":"Viserys I Targaryen","title":"King",
                      "weapon": [{"action": "has","name": "Valyrian Steel Dagger"}]
                   },
                   {"name":"Alicent Hightower"},
@@ -8874,7 +8875,7 @@
                   {"name":"Otto Hightower", "title":"Hand"},
                   {"name":"Maester Kelvyn"},
                   {"name":"Talya"},
-                  {"name":"Aegon Targaryen", "age":"adolescent"},
+                  {"name":"Aegon II Targaryen", "age":"adolescent"},
                   {"name":"Helaena Targaryen", "age":"child"},
                   {"name":"Corlys Velaryon"},
                   {"name":"Rhaenys Targaryen"},
@@ -8887,7 +8888,7 @@
                "location":"The Crownlands",
                "subLocation":"Driftmark",
                "characters":[
-                  {"name":"Viserys Targaryen","title":"King",
+                  {"name":"Viserys I Targaryen","title":"King",
                      "weapon": [{"action": "has","name": "Valyrian Steel Dagger"}]
                   },
                   {"name":"Alicent Hightower"},
@@ -8901,7 +8902,7 @@
                   {"name":"Otto Hightower", "title":"Hand"},
                   {"name":"Maester Kelvyn"},
                   {"name":"Talya"},
-                  {"name":"Aegon Targaryen", "age":"adolescent"},
+                  {"name":"Aegon II Targaryen", "age":"adolescent"},
                   {"name":"Helaena Targaryen", "age":"child"},
                   {"name":"Corlys Velaryon"},
                   {"name":"Rhaenys Targaryen"},
@@ -8916,7 +8917,7 @@
                "location":"The Crownlands",
                "subLocation":"Driftmark",
                "characters":[
-                  {"name":"Viserys Targaryen","title":"King"},
+                  {"name":"Viserys I Targaryen","title":"King"},
                   {"name":"Alicent Hightower",
                      "weapon": [{"action": "takes","name": "Valyrian Steel Dagger"}]
                   },
@@ -8930,7 +8931,7 @@
                   {"name":"Otto Hightower", "title":"Hand"},
                   {"name":"Maester Kelvyn"},
                   {"name":"Talya"},
-                  {"name":"Aegon Targaryen", "age":"adolescent"},
+                  {"name":"Aegon II Targaryen", "age":"adolescent"},
                   {"name":"Helaena Targaryen", "age":"child"},
                   {"name":"Corlys Velaryon"},
                   {"name":"Rhaenys Targaryen"},
@@ -8945,7 +8946,7 @@
                "location":"The Crownlands",
                "subLocation":"Driftmark",
                "characters":[
-                  {"name":"Viserys Targaryen","title":"King"},
+                  {"name":"Viserys I Targaryen","title":"King"},
                   {"name":"Alicent Hightower",
                      "weapon": [{"action": "drops","name": "Valyrian Steel Dagger"}]
                   },
@@ -8959,7 +8960,7 @@
                   {"name":"Otto Hightower", "title":"Hand"},
                   {"name":"Maester Kelvyn"},
                   {"name":"Talya"},
-                  {"name":"Aegon Targaryen", "age":"adolescent"},
+                  {"name":"Aegon II Targaryen", "age":"adolescent"},
                   {"name":"Helaena Targaryen", "age":"child"},
                   {"name":"Corlys Velaryon"},
                   {"name":"Rhaenys Targaryen"},
@@ -8974,7 +8975,7 @@
                "location":"The Crownlands",
                "subLocation":"Driftmark",
                "characters":[
-                  {"name":"Viserys Targaryen","title":"King"},
+                  {"name":"Viserys I Targaryen","title":"King"},
                   {"name":"Alicent Hightower"},
                   {"name":"Harrold Westerling"},
                   {"name":"Aemond Targaryen", "age":"child"},
@@ -8988,7 +8989,7 @@
                   {"name":"Otto Hightower", "title":"Hand"},
                   {"name":"Maester Kelvyn"},
                   {"name":"Talya"},
-                  {"name":"Aegon Targaryen", "age":"adolescent"},
+                  {"name":"Aegon II Targaryen", "age":"adolescent"},
                   {"name":"Helaena Targaryen", "age":"child"},
                   {"name":"Corlys Velaryon"},
                   {"name":"Rhaenys Targaryen"},
@@ -9089,7 +9090,7 @@
                "location":"The Crownlands",
                "subLocation":"Driftmark",
                "characters":[
-                  {"name":"Viserys Targaryen","title":"King"},
+                  {"name":"Viserys I Targaryen","title":"King"},
                   {"name":"Alicent Hightower"}
                ]
             },
@@ -9349,6 +9350,7 @@
             {
                "sceneStart":"0:03:21",
                "sceneEnd":"0:03:27",
+               "timeline":130,
                "location":"The Crownlands",
                "subLocation":"Driftmark",
                "characters":[
@@ -9626,7 +9628,7 @@
                         }
                      ]
                   },
-                  {"name":"Viserys Targaryen", "title":"King"}
+                  {"name":"Viserys I Targaryen", "title":"King"}
                ]
             },
             {
@@ -9645,7 +9647,7 @@
                         }
                      ]
                   },
-                  {"name":"Viserys Targaryen", "title":"King"},
+                  {"name":"Viserys I Targaryen", "title":"King"},
                   {"name":"Aegon III Targaryen", "age":"child"},
                   {"name":"Viserys II Targaryen", "age":"child"},
                   {"name":"Elinda Massey"}
@@ -9690,7 +9692,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {"name":"Alicent Hightower"},
-                  {"name":"Aegon Targaryen"}
+                  {"name":"Aegon II Targaryen"}
                ]
             },
             {
@@ -9700,7 +9702,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {"name":"Alicent Hightower"},
-                  {"name":"Aegon Targaryen"},
+                  {"name":"Aegon II Targaryen"},
                   {"name":"Helaena Targaryen"}
                ]
             },
@@ -9822,7 +9824,7 @@
                "location":"The Crownlands",
                "subLocation":"King's Landing",
                "characters":[
-                  {"name":"Viserys Targaryen", "title":"King"},
+                  {"name":"Viserys I Targaryen", "title":"King"},
                   {"name":"Rhaenyra Targaryen"}
                ]
             },
@@ -9840,7 +9842,7 @@
                "location":"The Crownlands",
                "subLocation":"King's Landing",
                "characters":[
-                  {"name":"Viserys Targaryen", "title":"King"},
+                  {"name":"Viserys I Targaryen", "title":"King"},
                   {"name":"Otto Hightower", "title":"Hand"},
                   {"name":"Grand Maester Orwyle"}
                ]
@@ -9854,7 +9856,7 @@
                   {"name":"Otto Hightower", "title":"Hand"},
                   {"name":"Grand Maester Orwyle"},
                   {"name":"Alicent Hightower"},
-                  {"name":"Aegon Targaryen"},
+                  {"name":"Aegon II Targaryen"},
                   {"name":"Aemond Targaryen"},
                   {"name":"Helaena Targaryen"},
                   {
@@ -9890,7 +9892,7 @@
                   {"name":"Otto Hightower", "title":"Hand"},
                   {"name":"Grand Maester Orwyle"},
                   {"name":"Alicent Hightower"},
-                  {"name":"Aegon Targaryen"},
+                  {"name":"Aegon II Targaryen"},
                   {"name":"Aemond Targaryen"},
                   {"name":"Helaena Targaryen"},
                   {
@@ -9916,7 +9918,7 @@
                   {"name":"Steffon Darklyn"},
                   {"name":"Arryk Cargyll"},
                   {"name":"Criston Cole"},
-                  {"name":"Viserys Targaryen","title":"King",
+                  {"name":"Viserys I Targaryen","title":"King",
                      "weapon": [{"action": "has","name": "Valyrian Steel Dagger"}]
                   }
                ]
@@ -9930,7 +9932,7 @@
                   {"name":"Otto Hightower", "title":"Hand"},
                   {"name":"Grand Maester Orwyle"},
                   {"name":"Alicent Hightower"},
-                  {"name":"Aegon Targaryen"},
+                  {"name":"Aegon II Targaryen"},
                   {"name":"Aemond Targaryen"},
                   {"name":"Helaena Targaryen"},
                   {
@@ -9963,7 +9965,7 @@
                   {"name":"Steffon Darklyn"},
                   {"name":"Arryk Cargyll"},
                   {"name":"Criston Cole"},
-                  {"name":"Viserys Targaryen","title":"King",
+                  {"name":"Viserys I Targaryen","title":"King",
                      "weapon": [{"action": "has","name": "Valyrian Steel Dagger"}]
                   }
                ]
@@ -9977,7 +9979,7 @@
                   {"name":"Otto Hightower", "title":"Hand"},
                   {"name":"Grand Maester Orwyle"},
                   {"name":"Alicent Hightower"},
-                  {"name":"Aegon Targaryen"},
+                  {"name":"Aegon II Targaryen"},
                   {"name":"Aemond Targaryen"},
                   {"name":"Helaena Targaryen"},
                   {
@@ -10003,7 +10005,7 @@
                   {"name":"Steffon Darklyn"},
                   {"name":"Arryk Cargyll"},
                   {"name":"Criston Cole"},
-                  {"name":"Viserys Targaryen","title":"King",
+                  {"name":"Viserys I Targaryen","title":"King",
                      "weapon": [{"action": "has","name": "Valyrian Steel Dagger"}]
                   }
                ]
@@ -10047,7 +10049,7 @@
                "characters":[
                   {"name":"Otto Hightower", "title":"Hand"},
                   {"name":"Alicent Hightower"},
-                  {"name":"Aegon Targaryen"},
+                  {"name":"Aegon II Targaryen"},
                   {"name":"Aemond Targaryen"},
                   {"name":"Helaena Targaryen"},
                   {"name":"Daemon Targaryen"},
@@ -10068,7 +10070,7 @@
                "characters":[
                   {"name":"Otto Hightower", "title":"Hand"},
                   {"name":"Alicent Hightower"},
-                  {"name":"Aegon Targaryen"},
+                  {"name":"Aegon II Targaryen"},
                   {"name":"Aemond Targaryen"},
                   {"name":"Helaena Targaryen"},
                   {"name":"Daemon Targaryen"},
@@ -10079,7 +10081,7 @@
                   {"name":"Rhaena Targaryen", "age":"adolescent"},
                   {"name":"Arryk Cargyll"},
                   {"name":"Erryk Cargyll"},
-                  {"name":"Viserys Targaryen","title":"King",
+                  {"name":"Viserys I Targaryen","title":"King",
                      "weapon": [{"action": "has","name": "Valyrian Steel Dagger"}]
                   }
                ]
@@ -10092,7 +10094,7 @@
                "characters":[
                   {"name":"Otto Hightower", "title":"Hand"},
                   {"name":"Alicent Hightower"},
-                  {"name":"Aegon Targaryen"},
+                  {"name":"Aegon II Targaryen"},
                   {"name":"Aemond Targaryen"},
                   {"name":"Helaena Targaryen"},
                   {"name":"Daemon Targaryen"},
@@ -10113,7 +10115,7 @@
                "characters":[
                   {"name":"Otto Hightower", "title":"Hand"},
                   {"name":"Alicent Hightower"},
-                  {"name":"Aegon Targaryen"},
+                  {"name":"Aegon II Targaryen"},
                   {"name":"Aemond Targaryen"},
                   {"name":"Helaena Targaryen"},
                   {"name":"Daemon Targaryen"},
@@ -10152,7 +10154,7 @@
                "location":"The Crownlands",
                "subLocation":"King's Landing",
                "characters":[
-                  {"name":"Viserys Targaryen","title":"King"}
+                  {"name":"Viserys I Targaryen","title":"King"}
                ]
             },
             {
@@ -10161,7 +10163,7 @@
                "location":"The Crownlands",
                "subLocation":"King's Landing",
                "characters":[
-                  {"name":"Viserys Targaryen","title":"King"},
+                  {"name":"Viserys I Targaryen","title":"King"},
                   {"name":"Alicent Hightower"}
                ]
             },
@@ -10172,7 +10174,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Viserys Targaryen",
+                     "name":"Viserys I Targaryen",
                      "title":"King",
                      "alive":false,
                      "mannerOfDeath":"Leprosy"
@@ -10700,7 +10702,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {"name":"Alicent Hightower"},
-                  {"name":"Viserys Targaryen", "title":"King", "alive":false}
+                  {"name":"Viserys I Targaryen", "title":"King", "alive":false}
                ]
             },
             {
@@ -10763,7 +10765,7 @@
                "characters":[
                   {"name":"Arryk Cargyll"},
                   {"name":"Erryk Cargyll"},
-                  {"name":"Aegon Targaryen"}
+                  {"name":"Aegon II Targaryen"}
                ]
             },
             {
@@ -10774,7 +10776,7 @@
                "characters":[
                   {"name":"Arryk Cargyll"},
                   {"name":"Erryk Cargyll"},
-                  {"name":"Aegon Targaryen"}
+                  {"name":"Aegon II Targaryen"}
                ]
             },
             {
@@ -10785,7 +10787,7 @@
                "characters":[
                   {"name":"Arryk Cargyll"},
                   {"name":"Erryk Cargyll"},
-                  {"name":"Aegon Targaryen"},
+                  {"name":"Aegon II Targaryen"},
                   {"name":"Criston Cole"},
                   {"name":"Aemond Targaryen"}
                ]
@@ -10796,7 +10798,7 @@
                "location":"The Crownlands",
                "subLocation":"King's Landing",
                "characters":[
-                  {"name":"Aegon Targaryen"},
+                  {"name":"Aegon II Targaryen"},
                   {"name":"Criston Cole"},
                   {"name":"Aemond Targaryen"}
                ]
@@ -10854,7 +10856,7 @@
                "location":"The Crownlands",
                "subLocation":"King's Landing",
                "characters":[
-                  {"name":"Aegon Targaryen"}
+                  {"name":"Aegon II Targaryen"}
                ]
             },
             {
@@ -11021,7 +11023,7 @@
                "location":"The Crownlands",
                "subLocation":"King's Landing",
                "characters":[
-                  {"name":"Aegon Targaryen"},
+                  {"name":"Aegon II Targaryen"},
                   {
                      "name":"Alicent Hightower",
                      "weapon": [
@@ -11040,7 +11042,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {
-                     "name":"Aegon Targaryen",
+                     "name":"Aegon II Targaryen",
                      "weapon": [
                         {
                            "action": "takes",
@@ -11158,7 +11160,7 @@
                   {"name":"Jasper Wylde"},
                   {"name":"Grand Maester Orwyle"},
                   {
-                     "name":"Aegon Targaryen",
+                     "name":"Aegon II Targaryen",
                      "weapon": [
                         {
                            "action": "has",
@@ -11189,7 +11191,7 @@
                   {"name":"Jasper Wylde"},
                   {"name":"Grand Maester Orwyle"},
                   {
-                     "name":"Aegon Targaryen",
+                     "name":"Aegon II Targaryen",
                      "weapon": [
                         {
                            "action": "has",
@@ -11220,7 +11222,7 @@
                   {"name":"Jasper Wylde"},
                   {"name":"Grand Maester Orwyle"},
                   {
-                     "name":"Aegon Targaryen",
+                     "name":"Aegon II Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -11252,7 +11254,7 @@
                   {"name":"Jasper Wylde"},
                   {"name":"Grand Maester Orwyle"},
                   {
-                     "name":"Aegon Targaryen",
+                     "name":"Aegon II Targaryen",
                      "title":"King",
                      "weapon": [
                         {
@@ -11328,7 +11330,7 @@
                   {"name":"Jasper Wylde"},
                   {"name":"Grand Maester Orwyle"},
                   {
-                     "name":"Aegon Targaryen",
+                     "name":"Aegon II Targaryen",
                      "title":"King",
                      "weapon": [
                         {
