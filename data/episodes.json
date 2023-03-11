@@ -2231,7 +2231,7 @@
                "sceneEnd":"0:03:37",
                "timeline":111,
                "location":"The Narrow Sea",
-               "subLocation":"Stepstones",
+               "subLocation":"The Stepstones",
                "characters":[
                ]
             },
@@ -2466,7 +2466,7 @@
                   },
                   {"name":"Laena Velaryon", "age":"child"},
                   {"name":"Rhaenyra Targaryen", "age":"adolescent"},
-                  {"name":"Rhaenys Velaryon"}
+                  {"name":"Rhaenys Targaryen"}
                ]
             },
             {
@@ -2476,7 +2476,7 @@
                "subLocation":"King's Landing",
                "characters":[
                   {"name":"Rhaenyra Targaryen", "age":"adolescent"},
-                  {"name":"Rhaenys Velaryon"}
+                  {"name":"Rhaenys Targaryen"}
                ]
             },
             {
@@ -2999,7 +2999,7 @@
                "sceneStart":"0:52:24",
                "sceneEnd":"0:52:36",
                "location":"The Narrow Sea",
-               "subLocation":"Stepstones",
+               "subLocation":"The Stepstones",
                "characters":[
                   {"name":"Craghas Drahar"}
                ]
@@ -3018,7 +3018,7 @@
                "sceneStart":"0:52:47",
                "sceneEnd":"0:53:00",
                "location":"The Narrow Sea",
-               "subLocation":"Stepstones",
+               "subLocation":"The Stepstones",
                "characters":[
                   {"name":"Craghas Drahar"}
                ]
@@ -3037,7 +3037,7 @@
                "sceneStart":"0:53:48",
                "sceneEnd":"0:53:53",
                "location":"The Narrow Sea",
-               "subLocation":"Stepstones",
+               "subLocation":"The Stepstones",
                "characters":[
                   {"name":"Craghas Drahar"}
                ]
@@ -3056,7 +3056,7 @@
                "sceneStart":"0:53:56",
                "sceneEnd":"0:54:00",
                "location":"The Narrow Sea",
-               "subLocation":"Stepstones",
+               "subLocation":"The Stepstones",
                "characters":[
                   {"name":"Craghas Drahar"}
                ]
@@ -3076,7 +3076,7 @@
                "sceneEnd":"0:03:15",
                "timeline":114,
                "location":"The Narrow Sea",
-               "subLocation":"Stepstones",
+               "subLocation":"The Stepstones",
                "characters":[
                ]
             },
@@ -3084,7 +3084,7 @@
                "sceneStart":"0:03:15",
                "sceneEnd":"0:04:06",
                "location":"The Narrow Sea",
-               "subLocation":"Stepstones",
+               "subLocation":"The Stepstones",
                "characters":[
                   {"name":"Craghas Drahar"},
                   {"name":"Velaryon Knight"}
@@ -3094,7 +3094,7 @@
                "sceneStart":"0:04:06",
                "sceneEnd":"0:04:33",
                "location":"The Narrow Sea",
-               "subLocation":"Stepstones",
+               "subLocation":"The Stepstones",
                "characters":[
                   {"name":"Craghas Drahar"},
                   {"name":"Velaryon Knight"},
@@ -3128,7 +3128,7 @@
                "sceneStart":"0:04:33",
                "sceneEnd":"0:04:40",
                "location":"The Narrow Sea",
-               "subLocation":"Stepstones",
+               "subLocation":"The Stepstones",
                "characters":[
                   {"name":"Craghas Drahar"},
                   {
@@ -3169,7 +3169,7 @@
                "sceneStart":"0:04:40",
                "sceneEnd":"0:05:34",
                "location":"The Narrow Sea",
-               "subLocation":"Stepstones",
+               "subLocation":"The Stepstones",
                "characters":[
                   {"name":"Craghas Drahar"},
                   {
@@ -3202,7 +3202,7 @@
                "sceneStart":"0:05:34",
                "sceneEnd":"0:06:06",
                "location":"The Narrow Sea",
-               "subLocation":"Stepstones",
+               "subLocation":"The Stepstones",
                "characters":[
                   {
                      "name":"Daemon Targaryen",
@@ -3234,7 +3234,7 @@
                "sceneStart":"0:06:06",
                "sceneEnd":"0:06:10",
                "location":"The Narrow Sea",
-               "subLocation":"Stepstones",
+               "subLocation":"The Stepstones",
                "characters":[
                ]
             },
@@ -4009,7 +4009,7 @@
                   {"name":"Alicent Hightower", "age":"adolescent"},
                   {"name":"Lynesse Hightower"},
                   {"name":"Ceira Lannister"},
-                  {"name:":"Joselyn Redwyne"}
+                  {"name":"Joselyn Redwyne"}
                ]
             },
             {
@@ -4068,7 +4068,7 @@
                   {"name":"Alicent Hightower", "age":"adolescent"},
                   {"name":"Lynesse Hightower"},
                   {"name":"Ceira Lannister"},
-                  {"name:":"Joselyn Redwyne"}
+                  {"name":"Joselyn Redwyne"}
                ]
             },
             {
@@ -4244,26 +4244,6 @@
                      ]
                   },
                   {"name":"Alicent Hightower", "age":"adolescent"}
-               ]
-            },
-            {
-               "sceneStart":"0:45:23",
-               "sceneEnd":"0:45",
-               "location":"The Crownlands",
-               "subLocation":"King's Landing",
-               "characters":[
-                  {"name":"Rhaenyra Targaryen", "age":"adolescent"},
-                  {
-                     "name":"Viserys I Targaryen",
-                     "title":"King",
-                     "weapon": [
-                        {
-                           "action": "has",
-                           "name": "Valyrian Steel Dagger"
-                        }
-                     ]
-                  },
-                  {"name":"Addam"}
                ]
             },
             {
@@ -9298,7 +9278,7 @@
                      },
                      "weapon":[{"action": "has","name": "Dragonglass"}]
                   },
-                  {"name":"Priest"}
+                  {"name":"High Priest"}
                ]
             },
             {
@@ -9309,7 +9289,7 @@
                "characters":[
                   {"name":"Rhaenyra Targaryen"},
                   {"name":"Daemon Targaryen"},
-                  {"name":"Priest"},
+                  {"name":"High Priest"},
                   {"name":"Baela Targaryen", "age":"child"},
                   {"name":"Rhaena Targaryen", "age":"child"},
                   {"name":"Jacaerys Velaryon", "age":"child"},
@@ -9869,8 +9849,8 @@
                      ]
                   },
                   {"name":"Rhaenyra Targaryen"},
-                  {"name":"Jacaerys Targaryen"},
-                  {"name":"Lucerys Targaryen", "age":"adolescent"},
+                  {"name":"Jacaerys Velaryon"},
+                  {"name":"Lucerys Velaryon", "age":"adolescent"},
                   {"name":"Rhaenys Targaryen"},
                   {"name":"Baela Targaryen"},
                   {"name":"Rhaena Targaryen", "age":"adolescent"},
@@ -9905,8 +9885,8 @@
                      ]
                   },
                   {"name":"Rhaenyra Targaryen"},
-                  {"name":"Jacaerys Targaryen"},
-                  {"name":"Lucerys Targaryen", "age":"adolescent"},
+                  {"name":"Jacaerys Velaryon"},
+                  {"name":"Lucerys Velaryon", "age":"adolescent"},
                   {"name":"Rhaenys Targaryen"},
                   {"name":"Baela Targaryen"},
                   {"name":"Rhaena Targaryen", "age":"adolescent"},
@@ -9945,8 +9925,8 @@
                      ]
                   },
                   {"name":"Rhaenyra Targaryen"},
-                  {"name":"Jacaerys Targaryen"},
-                  {"name":"Lucerys Targaryen", "age":"adolescent"},
+                  {"name":"Jacaerys Velaryon"},
+                  {"name":"Lucerys Velaryon", "age":"adolescent"},
                   {"name":"Rhaenys Targaryen"},
                   {"name":"Baela Targaryen"},
                   {"name":"Rhaena Targaryen", "age":"adolescent"},
@@ -9992,8 +9972,8 @@
                      ]
                   },
                   {"name":"Rhaenyra Targaryen"},
-                  {"name":"Jacaerys Targaryen"},
-                  {"name":"Lucerys Targaryen", "age":"adolescent"},
+                  {"name":"Jacaerys Velaryon"},
+                  {"name":"Lucerys Velaryon", "age":"adolescent"},
                   {"name":"Rhaenys Targaryen"},
                   {"name":"Baela Targaryen"},
                   {"name":"Rhaena Targaryen", "age":"adolescent"},
@@ -10054,8 +10034,8 @@
                   {"name":"Helaena Targaryen"},
                   {"name":"Daemon Targaryen"},
                   {"name":"Rhaenyra Targaryen"},
-                  {"name":"Jacaerys Targaryen"},
-                  {"name":"Lucerys Targaryen", "age":"adolescent"},
+                  {"name":"Jacaerys Velaryon"},
+                  {"name":"Lucerys Velaryon", "age":"adolescent"},
                   {"name":"Baela Targaryen"},
                   {"name":"Rhaena Targaryen", "age":"adolescent"},
                   {"name":"Arryk Cargyll"},
@@ -10075,8 +10055,8 @@
                   {"name":"Helaena Targaryen"},
                   {"name":"Daemon Targaryen"},
                   {"name":"Rhaenyra Targaryen"},
-                  {"name":"Jacaerys Targaryen"},
-                  {"name":"Lucerys Targaryen", "age":"adolescent"},
+                  {"name":"Jacaerys Velaryon"},
+                  {"name":"Lucerys Velaryon", "age":"adolescent"},
                   {"name":"Baela Targaryen"},
                   {"name":"Rhaena Targaryen", "age":"adolescent"},
                   {"name":"Arryk Cargyll"},
@@ -10099,8 +10079,8 @@
                   {"name":"Helaena Targaryen"},
                   {"name":"Daemon Targaryen"},
                   {"name":"Rhaenyra Targaryen"},
-                  {"name":"Jacaerys Targaryen"},
-                  {"name":"Lucerys Targaryen", "age":"adolescent"},
+                  {"name":"Jacaerys Velaryon"},
+                  {"name":"Lucerys Velaryon", "age":"adolescent"},
                   {"name":"Baela Targaryen"},
                   {"name":"Rhaena Targaryen", "age":"adolescent"},
                   {"name":"Arryk Cargyll"},
@@ -12528,7 +12508,7 @@
             {
                "sceneStart":"0:48:38",
                "sceneEnd":"0:48:44",
-               "location":"The Crownlands",
+               "location":"The Stormlands",
                "subLocation":"Storm's End",
                "characters":[
                ]
@@ -12536,7 +12516,7 @@
             {
                "sceneStart":"0:48:44",
                "sceneEnd":"0:49:13",
-               "location":"The Crownlands",
+               "location":"The Stormlands",
                "subLocation":"Storm's End",
                "characters":[
                   {
@@ -12563,7 +12543,7 @@
             {
                "sceneStart":"0:49:13",
                "sceneEnd":"0:49:26",
-               "location":"The Crownlands",
+               "location":"The Stormlands",
                "subLocation":"Storm's End",
                "characters":[
                   {"name":"Lucerys Velaryon", "age":"adolescent"},
@@ -12573,7 +12553,7 @@
             {
                "sceneStart":"0:49:26",
                "sceneEnd":"0:49:57",
-               "location":"The Crownlands",
+               "location":"The Stormlands",
                "subLocation":"Storm's End",
                "characters":[
                   {"name":"Lucerys Velaryon", "age":"adolescent"},
@@ -12584,7 +12564,7 @@
             {
                "sceneStart":"0:49:57",
                "sceneEnd":"0:50:03",
-               "location":"The Crownlands",
+               "location":"The Stormlands",
                "subLocation":"Storm's End",
                "characters":[
                   {"name":"Lucerys Velaryon", "age":"adolescent"}
@@ -12593,7 +12573,7 @@
             {
                "sceneStart":"0:50:03",
                "sceneEnd":"0:53:59",
-               "location":"The Crownlands",
+               "location":"The Stormlands",
                "subLocation":"Storm's End",
                "characters":[
                   {"name":"Lucerys Velaryon", "age":"adolescent"},
@@ -12608,7 +12588,7 @@
             {
                "sceneStart":"0:53:59",
                "sceneEnd":"0:54:01",
-               "location":"The Crownlands",
+               "location":"The Stormlands",
                "subLocation":"Storm's End",
                "characters":[
                   {"name":"Borros Baratheon"},
@@ -12622,7 +12602,7 @@
             {
                "sceneStart":"0:54:01",
                "sceneEnd":"0:54:39",
-               "location":"The Crownlands",
+               "location":"The Stormlands",
                "subLocation":"Storm's End",
                "characters":[
                   {"name":"Lucerys Velaryon", "age":"adolescent"},
@@ -12632,7 +12612,7 @@
             {
                "sceneStart":"0:54:39",
                "sceneEnd":"0:55:30",
-               "location":"The Crownlands",
+               "location":"The Stormlands",
                "subLocation":"Storm's End",
                "characters":[
                   {
@@ -12659,7 +12639,7 @@
             {
                "sceneStart":"0:55:30",
                "sceneEnd":"0:57:38",
-               "location":"The Crownlands",
+               "location":"The Stormlands",
                "subLocation":"Outside Storm's End",
                "characters":[
                   {
@@ -12704,7 +12684,7 @@
             {
                "sceneStart":"0:57:38",
                "sceneEnd":"0:57:58",
-               "location":"The Crownlands",
+               "location":"The Stormlands",
                "subLocation":"Outside Storm's End",
                "characters":[
                   {
@@ -12731,7 +12711,7 @@
             {
                "sceneStart":"0:57:58",
                "sceneEnd":"0:58:21",
-               "location":"The Crownlands",
+               "location":"The Stormlands",
                "subLocation":"Outside Storm's End",
                "characters":[
                   {

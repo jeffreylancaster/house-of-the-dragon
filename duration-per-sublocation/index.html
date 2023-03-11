@@ -126,7 +126,7 @@ function ready(error, e) {
   var svg = d3.select("svg"),
       margin = config.margin,
       width = +svg.attr("width") - margin.left - margin.right,
-      height = barHeight*data.length + margin.top + margin.bottom,
+      height = barHeight*data.length + margin.top + margin.bottom + 15,
       g = svg.append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 

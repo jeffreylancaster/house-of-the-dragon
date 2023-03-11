@@ -28,8 +28,7 @@
 			"hexadecimal": "#E32017",
 			"webSafe": "#CC3333",
 			"basic": "red",
-			"rgb": "rgb(220,36,31)",
-			"class": ["tyrell"]
+			"rgb": "rgb(220,36,31)"
 		},
 		{
 			"name": "Circle",
@@ -45,14 +44,15 @@
 			"webSafe": "#006633",
 			"basic": "green",
 			"rgb": "rgb(0,125,50)",
-			"class": ["dothraki"]
+			"class":["hightower","targaryen (greens)"]
 		},
 		{
 			"name": "Jubilee",
 			"hexadecimal": "#A0A5A9",
 			"webSafe": "#868F98",
 			"basic": "gray",
-			"rgb": "rgb(161,165,167)"
+			"rgb": "rgb(161,165,167)",
+			"class": ["dragons"]
 		},
 		{
 			"hexadecimal": "#666",
@@ -74,7 +74,7 @@
 			"webSafe": "#000000",
 			"basic": "black",
 			"rgb": "rgb(0,0,0)",
-			"class": ["nightswatch"]
+			"class": ["targaryen (blacks)"]
 		},
 		{
 			"name": "Piccadilly",
@@ -82,15 +82,14 @@
 			"webSafe": "#000099",
 			"basic": "blue",
 			"rgb": "rgb(0,25,168)",
-			"class": ["greyjoy"]
+			"class":["velaryon"]
 		},
 		{
 			"name": "Victoria",
 			"hexadecimal": "#0098D4",
 			"webSafe": "#0099CC",
 			"basic": "lightblue",
-			"rgb": "rgb(0,152,216)",
-			"class": ["tully"]
+			"rgb": "rgb(0,152,216)"
 		},
 		{
 			"name": "Waterloo and City",
@@ -98,30 +97,27 @@
 			"webSafe": "#66CCCC",
 			"basic": "beige",
 			"rgb": "rgb(147,206,186)",
-			"class": ["wildling"]
+			"class": ["strong"]
 		},
 		{
 			"name": "DLR",
 			"hexadecimal": "#00A4A7",
 			"webSafe": "#009999",
 			"basic": "aquamarine",
-			"rgb": "rgb(0,175,173)",
-			"class": ["frey"]
+			"rgb": "rgb(0,175,173)"
 		},
 		{
 			"name": "Overground",
 			"hexadecimal": "#EE7C0E",
 			"webSafe": "#FF6600",
 			"basic": "orange",
-			"rgb": "rgb(239,123,16)",
-			"class": ["martell"]
+			"rgb": "rgb(239,123,16)"
 		},
 		{
 			"hexadecimal": "#87cefa",
 			"webSafe": "#87CEFA",
 			"basic": "lightskyblue",
-			"rgb": "rgb(135,206,250)",
-			"class": ["whitewalkers"]
+			"rgb": "rgb(135,206,250)"
 		},
 		{
 			"name": "Tramlink",
@@ -141,7 +137,7 @@
 			"hexadecimal": "#E21836",
 			"basic": "salmon",
 			"rgb": "rgb(220,36,31)",
-			"class": ["king", "khal", "khaleesi"],
+			"class": ["king", "khal", "khaleesi", "queen"],
 			"css": {
 				"stroke-width": "3px"
 			}

@@ -522,7 +522,7 @@
 					"episodesActive":[
 						{"s":1,"ep":[8,10]}
 					]
-				},
+				}
 			}
 		},
 		{
@@ -836,7 +836,7 @@
 			"guardianOf":[
 				"Jaehaerys I Targaryen",
 				"Viserys I Targaryen"
-			],
+			]
 		},
 		{
 			"characterName":"Simon Staunton",

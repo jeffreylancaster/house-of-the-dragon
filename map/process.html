@@ -49,7 +49,7 @@ function onlyUnique(value, index, self) {
 var config = {
 	"includeAll": true, // whether to include all characters or not
 	"useSub": true, // whether to use locations (false) or sublocations (true)
-	"laneHeight": 3
+	"laneHeight": 4
 }
 
 /* IMPORT DATA */
@@ -96,10 +96,10 @@ function ready(error, e, inc, l) {
 	}, {});
   
   // make list of opening locations
-  var openinglocations = e.episodes.reduce(function(acc, val, ind){
-    return [...acc, ...val.openingSequenceLocations];
-  }, [])
-  	.filter(onlyUnique);
+  // var openinglocations = e.episodes.reduce(function(acc, val, ind){
+  //   return [...acc, ...val.openingSequenceLocations];
+  // }, [])
+  // 	.filter(onlyUnique);
 
   // put all scenes in one array
   var end = 0,
@@ -343,6 +343,7 @@ function ready(error, e, inc, l) {
   		characters[v.name].values.push(c);
   	})
   })
+  console.log(scenes)
 
   // modify the sublocations to just give the sublocation
   var specific = sublocations.map(function(val, ind){

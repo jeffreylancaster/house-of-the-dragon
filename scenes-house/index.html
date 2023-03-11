@@ -210,7 +210,7 @@ function ready(error, e, g) {
     .attr("transform", "translate(0,0)")
     .call(d3.axisLeft(y)
       .tickFormat(function(d){
-        var groups = ["Lannister", "Stark", "Baratheon", "Targaryen", "Tyrell", "Greyjoy", "Martell", "Frey", "Tully"];
+        var groups = ["Lannister", "Stark", "Baratheon", "Targaryen", "Tyrell", "Greyjoy", "Martell", "Frey", "Tully", "Targaryen (Greens)", "Targaryen (Blacks)", "Hightower", "Strong", "Velaryon"];
         var alt = (groups.indexOf(d) > -1) ? `House ${d}` : `The ${d}`;
         return alt;
       })

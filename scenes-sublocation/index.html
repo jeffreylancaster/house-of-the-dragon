@@ -145,7 +145,7 @@ function ready(error, e) {
       g = svg.append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-  svg.attr("height", height);
+  svg.attr("height", height+25);
 
   var y = d3.scaleBand() 
       .rangeRound([0, height])

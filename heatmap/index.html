@@ -354,7 +354,7 @@ function ready(error, e, l, heatmap) {
       g = svg.append("g")
         .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-  svg.attr("height", height);
+  svg.attr("height", height + 5);
 
   // set the axes
   var y = d3.scaleBand() 
