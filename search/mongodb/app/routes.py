@@ -9,7 +9,7 @@ import urllib
 # ? https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-xvi-full-text-search ?
 
 # load environment variables in .env
-load_dotenv()
+load_dotenv(encoding='utf-8')
 # store environment variables
 USER = os.getenv("MONGO_USERNAME")
 PASSWORD = os.getenv("MONGO_PASSWORD")
@@ -31,17 +31,15 @@ def index():
     else:
         query = request.form['query']
         
-        collection = mongo.db.script
-        script = collection.find(
+        script = list(mongo.db.script.find(
             {"$text": {"$search": query}},
             {"score": {"$meta": "textScore"}}
-        ).limit(1000)
+        ).limit(1000))
         # .sort("score": {"$meta": "textScore"})
         
-        count = script.count(False)
-        num = script.count(True)
+        num = len(script)
         
-        return render_template('index.html', script = script, count = count, num = num )
+        return render_template('index.html', script = script, num = num )
         
 # SPEAKER PAGE
 
@@ -54,13 +52,11 @@ def nameRedirect():
 @app.route('/name/<name>')
 
 def name(name):
-    collection = mongo.db.script
-    script = collection.find(
+    script = list(mongo.db.script.find(
         {"name": name}
-    ).limit(1000)
+    ).limit(1000))
     # .sort("score": {"$meta": "textScore"})
     
-    count = script.count(False)
-    num = script.count(True)
+    num = len(script)
     
-    return render_template('speaker.html', script = script, count = count, num = num, name = name)
+    return render_template('speaker.html', script = script, num = num, name = name)
