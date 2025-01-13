@@ -1,6 +1,5 @@
-Flask==1.0.2
-gunicorn==19.9.0
-flask-pymongo==2.2.0
-dnspython==1.16.0
-bson==0.5.8
-python-dotenv==0.10.1
+Flask==3.1.0
+gunicorn==23.0.0
+Flask-PyMongo==2.2.0
+dnspython==2.7.0
+python-dotenv==1.0.1
